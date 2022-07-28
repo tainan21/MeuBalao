@@ -60,7 +60,7 @@
     <h1 class="heading"> Sobre nós </h1>
     <div class="column">
         <div class="image">
-            <img src="@/assets/images/about-img.png" alt="">
+            <img src="@/assets/images/home-img.png" alt="">
         </div>
         <div class="content">
             <h3>Easy And Perfect Solution For Your Balonismo Fly</h3>
@@ -301,7 +301,7 @@
 
     </div>
 
-    <h1 class="center text-center" style="text-align: center;"> &copy; copyright @ 2021 by mr. Pedrinha bombado Olympia & Tai </h1>
+    <h1 class="center text-center" style="text-align: center;"> &copy; copyright @ 2021 by TaiCode </h1>
 
 </div>
 
