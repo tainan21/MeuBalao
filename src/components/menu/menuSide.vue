@@ -6,13 +6,12 @@
             <i class='bx bx-menu'></i>
           </vs-button>
         </template>
+        <template #right>
             <vs-navbar-item :active="active == 'guide'" item:id="guide">Home</vs-navbar-item>
             <vs-navbar-item :active="active == 'docs'" id="docs">Empresa</vs-navbar-item>
             <vs-navbar-item :active="active == 'components'" id="components">Serviços</vs-navbar-item>
             <vs-navbar-item :active="active == 'components'" id="components">Galeria</vs-navbar-item>
             <vs-navbar-item :active="active == 'license'" id="license">Contato</vs-navbar-item>
-        <template #right>
-            <router-link to="#ancora"> Teste </router-link>
         </template>
       </vs-navbar>
       <vs-sidebar
