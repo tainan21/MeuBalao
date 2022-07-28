@@ -2,9 +2,7 @@
   <div id="app">
 	<div class="title-container">
 		<div>
-			<h3 class="title">
-				Balonismo
-			</h3>
+			<h1 class="heading">Balonismo</h1>
 		</div>
 		<div class="filters">
 			<span class="filter" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>

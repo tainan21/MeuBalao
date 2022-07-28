@@ -5,6 +5,11 @@
       <MenuVueBottom />
       <router-view/>
     </div>
+    <div class="topbarshowphone">
+      <MenuVue />
+      <MenuVueBottom />
+      <router-view/>
+    </div>
   </div>
 </template>
 

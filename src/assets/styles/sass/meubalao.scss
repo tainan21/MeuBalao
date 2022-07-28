@@ -6,10 +6,15 @@
     --gradient:linear-gradient(90deg, var(--purple), var(--pink));
 }
 .vs-navbar__item{
-    color: #814096 !important;
+    color:var(--purple) !important;
     font-size: 16px !important;
+    &:hover{
+        color:var(--pink) !important;
+    }
 }
-
+.barshow{
+    margin-top: 33px !important;
+}
 *{
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;

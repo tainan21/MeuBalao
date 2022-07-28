@@ -1,24 +1,5 @@
 <template>
   <div>
-<header>
-
-    <a href="#" class="logo"><span>best</span>App</a>
-
-    <input type="checkbox" id="menu-bar">
-    <label for="menu-bar" class="fas fa-bars"></label>
-
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#features">features</a>
-        <a href="#about">about</a>
-        <a href="#review">review</a>
-        <a href="#pricing">pricing</a>
-        <a href="#contact">contact</a>
-    </nav>
-
-</header>
-
-<!-- header section ends -->
 
 <!-- home section starts  -->
 
@@ -226,6 +207,13 @@
 
 <!-- pricing section ends -->
 
+<!-- GalleryFilter section starts -->
+
+<GalleryFilter /> 
+
+<!-- GalleryFilter section ends -->
+
+
 <!-- contact section starts  -->
 
 <section class="contact" id="contact">
@@ -318,7 +306,20 @@
 </div>
 
   </div>
-  </template>
+</template>
+
+<script>
+import GalleryFilter from '@/views/GalleryFilter.vue'
+//import ComponenteWrapper from '@/ComponenteWrapper.vue'
+
+  export default {
+    components: {
+      'GalleryFilter': GalleryFilter
+  //  'ComponenteWrapper': ComponenteWrapper,
+     },
+  }
+  
+ </script>
 <style lang="scss" scoped>
 
 
