@@ -29,23 +29,23 @@
 
         <div class="box">
             <img src="@/assets/images/f-icon1.png" alt="">
-            <h3>amazing UI design</h3>
+            <h3>Voo Em Grupo</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn">Saiba Mais!</a>
         </div>
 
         <div class="box">
             <img src="@/assets/images/f-icon2.png" alt="">
-            <h3>soft and smooth animations</h3>
+            <h3>Balonismo Promocional</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn">Saiba Mais!</a>
         </div>
 
         <div class="box">
             <img src="@/assets/images/f-icon3.png" alt="">
-            <h3>freindly interactions</h3>
+            <h3>Maior Balão de Boituva</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn">Saiba Mais!</a>
         </div>
 
     </div>
@@ -63,12 +63,12 @@
             <img src="@/assets/images/about-img.png" alt="">
         </div>
         <div class="content">
-            <h3>Easy And Perfect Solution For Your Business App</h3>
+            <h3>Easy And Perfect Solution For Your Balonismo Fly</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat deserunt saepe repudiandae veniam soluta minima dolor hic aperiam iure.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quaerat. Dolorem ratione saepe magni quo inventore porro ab voluptates eos, nam eius provident accusantium, quia similique est, repellendus et reiciendis.</p>
             <div class="buttons">
-                <a href="#" class="btn"> <i class="fab fa-apple"></i> app store </a>
-                <a href="#" class="btn"> <i class="fab fa-google-play"></i> google-play </a>
+                <a href="#" class="btn"> <i class="fab fa-apple"></i> Whatsapp </a>
+                <a href="#" class="btn"> <i class="fab fa-google-play"></i> Instagram </a>
             </div>
         </div>
     </div>
@@ -80,11 +80,11 @@
 
 <div class="newsletter">
 
-    <h3>Subscribe For New Features</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed aliquam quibusdam neque magni magnam est laborum doloribus, facere dolores.</p>
+    <h1 class="heading">Siga-nos para mais informações</h1>
+    <p>Deixe seu instagram que iremos te seguir para mais informações :). Ou siga para receber novidades!</p>
     <form action="">
-        <input type="email" placeholder="enter your email">
-        <input type="submit" value="Subscribe">
+        <input type="email" placeholder="Deixe seu Instagram">
+        <input type="submit" value="Instagram">
     </form>
 
 </div>
@@ -161,44 +161,44 @@
 
 <section class="pricing" id="pricing">
 
-    <h1 class="heading"> Our Pricing Plans </h1>
+    <h1 class="heading"> Nossos Passeios </h1>
 
     <div class="box-container">
 
         <div class="box">
-            <h3 class="title">basic</h3>
-            <div class="price">$10<span>/monthly</span></div>
+            <h3 class="title">Voo em Grupo</h3>
+          <!--  <div class="price">$10<span>/monthly</span></div> -->
             <ul>
-                <li> <i class="fas fa-check"></i> 1000+ downloads </li>
+                <li> <i class="fas fa-check"></i> 1000+ voos </li>
                 <li> <i class="fas fa-check"></i> No transaction fees </li>
                 <li> <i class="fas fa-times"></i> unlimited storage </li>
-                <li> <i class="fas fa-times"></i> 5 downloads </li>
+                <li> <i class="fas fa-times"></i> +40 de balões  </li>
             </ul>
-            <a href="#" class="btn">check out</a>
+            <a href="#" class="btn">Confira agora</a>
         </div>
 
         <div class="box">
-            <h3 class="title">standard</h3>
-            <div class="price">$15<span>/monthly</span></div>
+            <h3 class="title">Balonismo Promocional</h3>
+        <!--      <div class="price">$15<span>/monthly</span></div>  -->
             <ul>
-                <li> <i class="fas fa-check"></i> 1000+ downloads </li>
+                <li> <i class="fas fa-check"></i> 1000+ voos </li>
                 <li> <i class="fas fa-check"></i> No transaction fees </li>
                 <li> <i class="fas fa-check"></i> unlimited storage </li>
-                <li> <i class="fas fa-times"></i> 5 downloads </li>
+                <li> <i class="fas fa-times"></i> +40 de balões  </li>
             </ul>
-            <a href="#" class="btn">check out</a>
+            <a href="#" class="btn">Confira agora</a>
         </div>
 
         <div class="box">
-            <h3 class="title">premium</h3>
-            <div class="price">$25<span>/monthly</span></div>
+            <h3 class="title">Maior de Boituva</h3>
+         <!--    <div class="price">$25<span>/monthly</span></div>  -->
             <ul>
-                <li> <i class="fas fa-check"></i> 1000+ downloads </li>
+                <li> <i class="fas fa-check"></i> Totalmente Novo! </li>
                 <li> <i class="fas fa-check"></i> No transaction fees </li>
                 <li> <i class="fas fa-check"></i> unlimited storage </li>
-                <li> <i class="fas fa-check"></i> 5 downloads </li>
+                <li> <i class="fas fa-check"></i> 1 balão no céu </li>
             </ul>
-            <a href="#" class="btn">check out</a>
+            <a href="#" class="btn">Confira agora</a>
         </div>
 
     </div>
@@ -301,7 +301,7 @@
 
     </div>
 
-    <h1 class="credit"> &copy; copyright @ 2021 by mr. web designer </h1>
+    <h1 class="center text-center" style="text-align: center;"> &copy; copyright @ 2021 by mr. Pedrinha bombado Olympia & Tai </h1>
 
 </div>
 
