@@ -43,7 +43,7 @@
 
         <div class="box">
             <img src="@/assets/images/f-icon3.png" alt="">
-            <h3>Maior Balão de Boituva</h3>
+            <h3>voo de casal</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
             <a href="#" class="btn">Saiba Mais!</a>
         </div>
@@ -190,7 +190,7 @@
         </div>
 
         <div class="box">
-            <h3 class="title">Maior de Boituva</h3>
+            <h3 class="title">Voo de Casal</h3>
          <!--    <div class="price">$25<span>/monthly</span></div>  -->
             <ul>
                 <li> <i class="fas fa-check"></i> Totalmente Novo! </li>
