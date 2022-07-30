@@ -24,17 +24,32 @@
 </template>
 
 <script>
+  import imagema from "@/assets/images/imagem1.jpg"
+  import imagemb from "@/assets/images/imagem2.jpg"
+  import imagemc from "@/assets/images/imagem3.jpg"
+  import imagemd from "@/assets/images/imagem4.jpg"
+  import imageme from "@/assets/images/imagem5.jpg"
+  import imagemf from "@/assets/images/imagem4.jpg"
+  import imagemg from "@/assets/images/imagem5.jpg"
+/*  import imagemh from "@/assets/images/imagem8.JPG"
+  import imagemi from "@/assets/images/imagem9.JPG"
+  import imagemj from "@/assets/images/imagem10.JPG"
+  import imagemk from "@/assets/images/imagem11.JPG"
+  import imagemo from "@/assets/images/imagem12.JPG"
+  import imagemp from "@/assets/images/imagem13.jpg"
+  import imagemq from "@/assets/images/imagem14.jpg"
+  */
   export default {
     data:() => ({
       currentFilter: 'ALL',
       projects: [
-        {title: "Artwork", image: "https://picsum.photos/g/200?image=122", category: 'ART'},
-        {title: "Charcoal", image: "https://picsum.photos/g/200?image=116", category: 'ART'},
-        {title: "Sketching", image: "https://picsum.photos/g/200?image=121", category: 'DOODLES'},
-        {title: "Acrillic", image: "https://picsum.photos/g/200?image=133", category: 'WORKSHOPS'},
-        {title: "Pencil", image: "https://picsum.photos/g/200?image=134", category: 'DOODLES'},
-        {title: "Pen", image: "https://picsum.photos/g/200?image=115", category: 'ART'},
-        {title: "Inking", image: "https://picsum.photos/g/200", category: 'WORKSHOPS'},
+        {title: "Artwork", image: imagema, category: 'ART'},
+        {title: "Charcoal", image: imagemb, category: 'ART'},
+        {title: "Sketching", image: imagemc, category: 'DOODLES'},
+        {title: "Acrillic", image: imagemd, category: 'WORKSHOPS'},
+        {title: "Pencil", image: imageme, category: 'DOODLES'},
+        {title: "Pen", image: imagemf, category: 'ART'},
+        {title: "Inking", image: imagemg, category: 'WORKSHOPS'},
       ]
     }),
 	methods: {

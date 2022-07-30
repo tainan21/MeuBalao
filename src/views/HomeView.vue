@@ -19,41 +19,6 @@
 
 <!-- home section ends -->
 
-<!-- features section starts  -->
-
-<section class="features" id="features">
-
-    <h1 class="heading"> app features </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="@/assets/images/f-icon1.png" alt="">
-            <h3>Voo Em Grupo</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-            <a href="#" class="btn">Saiba Mais!</a>
-        </div>
-
-        <div class="box">
-            <img src="@/assets/images/f-icon2.png" alt="">
-            <h3>Balonismo Promocional</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-            <a href="#" class="btn">Saiba Mais!</a>
-        </div>
-
-        <div class="box">
-            <img src="@/assets/images/f-icon3.png" alt="">
-            <h3>voo de casal</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-            <a href="#" class="btn">Saiba Mais!</a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- features section ends -->
-
 <!-- about section starts  -->
 
 <section class="about" id="about">
@@ -67,7 +32,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat deserunt saepe repudiandae veniam soluta minima dolor hic aperiam iure.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quaerat. Dolorem ratione saepe magni quo inventore porro ab voluptates eos, nam eius provident accusantium, quia similique est, repellendus et reiciendis.</p>
             <div class="buttons">
-                <a href="#" class="btn"> <i class="fab fa-apple"></i> Whatsapp </a>
+                <a href="https://wa.me/5515997150101?text=Ola" class="btn"> <i class="fab fa-apple"></i> Whatsapp </a>
                 <a href="#" class="btn"> <i class="fab fa-google-play"></i> Instagram </a>
             </div>
         </div>
@@ -75,6 +40,43 @@
 </section>
 
 <!-- about section ends -->
+
+
+<!-- Serviços section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> Serviços </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="@/assets/images/f-icon1.png" alt="">
+            <h3>Voo Em Grupo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
+        </div>
+
+        <div class="box">
+            <img src="@/assets/images/f-icon2.png" alt="">
+            <h3>Balonismo Promocional</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
+        </div>
+
+        <div class="box">
+            <img src="@/assets/images/f-icon3.png" alt="">
+            <h3>voo de casal</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
 
 <!-- newsletter  -->
 
@@ -174,7 +176,7 @@
                 <li> <i class="fas fa-times"></i> unlimited storage </li>
                 <li> <i class="fas fa-times"></i> +40 de balões  </li>
             </ul>
-            <a href="#" class="btn">Confira agora</a>
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
         </div>
 
         <div class="box">
@@ -186,7 +188,7 @@
                 <li> <i class="fas fa-check"></i> unlimited storage </li>
                 <li> <i class="fas fa-times"></i> +40 de balões  </li>
             </ul>
-            <a href="#" class="btn">Confira agora</a>
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
         </div>
 
         <div class="box">
@@ -198,7 +200,7 @@
                 <li> <i class="fas fa-check"></i> unlimited storage </li>
                 <li> <i class="fas fa-check"></i> 1 balão no céu </li>
             </ul>
-            <a href="#" class="btn">Confira agora</a>
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
         </div>
 
     </div>
@@ -261,12 +263,24 @@
     <div class="box-container">
 
         <div class="box">
-            <h3>about us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur rerum consectetur architecto ad tempora blanditiis quo aliquid inventore a.</p>
+            <h3>Nosso Contato</h3>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p> (15) 99715-0101 </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p> meubalaobtv@gmail.com </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> mumbai, india - 400104 </p>
+            </div>
         </div>
 
+
         <div class="box">
-            <h3>quick links</h3>
+            <h3 class="">Links</h3>
             <a href="#">home</a>
             <a href="#">features</a>
             <a href="#">about</a>
@@ -276,27 +290,16 @@
         </div>
 
         <div class="box">
-            <h3>follow us</h3>
-            <a href="#">facebook</a>
+            <h3 class="">Siga</h3>
+            <a href="https://www.facebook.com/meubalaoboituva">facebook</a>
             <a href="#">instagram</a>
             <a href="#">pinterest</a>
             <a href="#">twitter</a>
         </div>
 
         <div class="box">
-            <h3>contact info</h3>
-            <div class="info">
-                <i class="fas fa-phone"></i>
-                <p> +123-456-7890 <br> +111-2222-333 </p>
-            </div>
-            <div class="info">
-                <i class="fas fa-envelope"></i>
-                <p> example@gmail.com <br> example@gmail.com </p>
-            </div>
-            <div class="info">
-                <i class="fas fa-map-marker-alt"></i>
-                <p> mumbai, india - 400104 </p>
-            </div>
+            <h3 class="">Sobre</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur rerum consectetur architecto ad tempora blanditiis quo aliquid inventore a.</p>
         </div>
 
     </div>

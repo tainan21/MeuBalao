@@ -5,15 +5,15 @@
     --pink:#F83292;
     --gradient:linear-gradient(90deg, var(--purple), var(--pink));
 }
+.vs-sidebar-content{
+    width: calc(100% - 20px) !important;
+}
 .vs-navbar__item{
     color:var(--purple) !important;
     font-size: 16px !important;
     &:hover{
         color:var(--pink) !important;
     }
-}
-.barshow{
-    margin-top: 33px !important;
 }
 *{
     font-family: 'Poppins', sans-serif;
@@ -189,7 +189,7 @@ header label{
 
 .features .box-container .box p{
     font-size: 1.3rem;
-    color:#666;
+    color:#333;
     padding: 1rem 0;
 }
 
@@ -491,8 +491,8 @@ header label{
 
 .footer .box-container .box h3{
     font-size: 2.5rem;
+    color:var(--pink);
     padding:1rem 0;
-    color:#fff;
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
@@ -500,14 +500,14 @@ header label{
 .footer .box-container .box p{
     font-size: 1.5rem;
     padding:.5rem 0;
-    color:#eee;
+    color: #333;
 }
 
 .footer .box-container .box a{
     display: block;
     font-size: 1.5rem;
     padding:.5rem 0;
-    color:#eee;
+    color:#333;
 }
 
 .footer .box-container .box a:hover{
