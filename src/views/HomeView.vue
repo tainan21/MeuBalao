@@ -28,9 +28,9 @@
             <img src="@/assets/images/home-img.png" alt="">
         </div>
         <div class="content">
-            <h3>Easy And Perfect Solution For Your Balonismo Fly</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat deserunt saepe repudiandae veniam soluta minima dolor hic aperiam iure.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quaerat. Dolorem ratione saepe magni quo inventore porro ab voluptates eos, nam eius provident accusantium, quia similique est, repellendus et reiciendis.</p>
+            <h3>How was this dream born?</h3>
+            <p>Em 2013 em uma viajem a Turquia, eu fiz um voo de balão na capadócia, naquela manhã uma semente estava plantada em meu coração, uma paixão pelo balonismo. Anos depois eu tive oportunidade de conhecer o balonismo de Boituva,</p>
+            <p> através do meu irmão e Socio, então decidimos comprar um balão e começar não só um negócio mas sim a realização de um sonho.</p>
             <div class="buttons">
                 <a href="https://wa.me/5515997150101?text=Ola" class="btn"> <i class="fab fa-apple"></i> Whatsapp </a>
                 <a href="#" class="btn"> <i class="fab fa-google-play"></i> Instagram </a>
@@ -325,5 +325,14 @@ import GalleryFilter from '@/views/GalleryFilter.vue'
  </script>
 <style lang="scss" scoped>
 
+.home{
+    background-image: url(https://img.freepik.com/fotos-gratis/natureza-anoitecer-nuvem-paisagem-colorida_1203-5705.jpg?w=740&t=st=1659215220~exp=1659215820~hmac=571604d…);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
 
 </style>

@@ -2,7 +2,13 @@
     <div class="hidden">
       <div class="barshow">
         <vs-navbar shadow square center-collapsed v-model="active">
-          <template #left></template>
+          <template #left>
+              <div class="testesupremo">
+                <div class="image">
+                  <img src="@/assets/images/logo-trans.png" class="logoimg" alt="meubalao">
+                </div>
+              </div>
+          </template>
           <template #right>
             <div class="barshow">
               <vs-navbar-item :active="active == 'guide'" item:id="guide">Home</vs-navbar-item>
@@ -62,5 +68,22 @@
   .topbarshowphone{
     display: none;
    }
+}
+.testesupremo{
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-bottom-right-radius: 110%;
+    border-top-right-radius: 25%;
+}
+.logoimg{
+  width: 100px; height: 100px;
 }
 </style>

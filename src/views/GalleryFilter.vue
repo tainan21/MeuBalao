@@ -6,9 +6,9 @@
 		</div>
 		<div class="filters">
 			<span class="filter" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
-			<span class="filter" v-bind:class="{ active: currentFilter === 'ART' }" v-on:click="setFilter('ART')">BALONISMO</span>
-			<span class="filter" v-bind:class="{ active: currentFilter === 'WORKSHOPS' }" v-on:click="setFilter('WORKSHOPS')">CLIENTES</span>
-			<span class="filter" v-bind:class="{ active: currentFilter === 'FUN' }" v-on:click="setFilter('DOODLES')">EXPERIÊNCIAS</span>
+			<span class="filter" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">BALONISMO</span>
+			<span class="filter" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">CLIENTES</span>
+			<span class="filter" v-bind:class="{ active: currentFilter === 'EXP' }" v-on:click="setFilter('EXP')">EXPERIÊNCIAS</span>
 		</div>
 	</div>
 	<transition-group class="projects" name="projects" >
@@ -29,27 +29,41 @@
   import imagemc from "@/assets/images/imagem3.jpg"
   import imagemd from "@/assets/images/imagem4.jpg"
   import imageme from "@/assets/images/imagem5.jpg"
-  import imagemf from "@/assets/images/imagem4.jpg"
-  import imagemg from "@/assets/images/imagem5.jpg"
-/*  import imagemh from "@/assets/images/imagem8.JPG"
-  import imagemi from "@/assets/images/imagem9.JPG"
-  import imagemj from "@/assets/images/imagem10.JPG"
-  import imagemk from "@/assets/images/imagem11.JPG"
-  import imagemo from "@/assets/images/imagem12.JPG"
-  import imagemp from "@/assets/images/imagem13.jpg"
-  import imagemq from "@/assets/images/imagem14.jpg"
-  */
+  import imagemf from "@/assets/images/imagem6.jpg"
+  import imagemg from "@/assets/images/imagem7.jpg"
+  import imagemh from "@/assets/images/imagem8.jpg"
+  import imagemi from "@/assets/images/imagem9.jpg"
+  import imagemj from "@/assets/images/imagem10.jpg"
+  import imagemk from "@/assets/images/imagem11.jpg"
+  import imagemm from "@/assets/images/imagem12.jpg"
+  import imagemn from "@/assets/images/imagem13.jpg"
+  import imagemo from "@/assets/images/imagem14.jpg"
+  import imagemp from "@/assets/images/imagem15.jpg"
+  import imagemq from "@/assets/images/imagem16.jpg"
+  import imagemr from "@/assets/images/imagem17.jpg"
+  import imagems from "@/assets/images/imagem18.jpg"
   export default {
     data:() => ({
       currentFilter: 'ALL',
       projects: [
-        {title: "Artwork", image: imagema, category: 'ART'},
-        {title: "Charcoal", image: imagemb, category: 'ART'},
-        {title: "Sketching", image: imagemc, category: 'DOODLES'},
-        {title: "Acrillic", image: imagemd, category: 'WORKSHOPS'},
-        {title: "Pencil", image: imageme, category: 'DOODLES'},
-        {title: "Pen", image: imagemf, category: 'ART'},
-        {title: "Inking", image: imagemg, category: 'WORKSHOPS'},
+        {title: "Artwork", image: imagema, category: 'BAL'},
+        {title: "Charcoal", image: imagemb, category: 'BAL'},
+        {title: "Sketching", image: imagemc, category: 'EXP'},
+        {title: "Acrillic", image: imagemd, category: 'CLI'},
+        {title: "Pencil", image: imageme, category: 'EXP'},
+        {title: "Pen", image: imagemf, category: 'BAL'},
+        {title: "Inking", image: imagemg, category: 'CLI'},
+        {title: "", image: imagemh, category: 'BAL'},
+        {title: "", image: imagemi, category: 'BAL'},
+        {title: "", image: imagemj, category: 'BAL'},
+        {title: "", image: imagemk, category: 'BAL'},
+        {title: "", image: imagemm, category: 'BAL'},
+        {title: "", image: imagemn, category: 'BAL'},
+        {title: "", image: imagemo, category: 'BAL'},
+        {title: "", image: imagemp, category: 'BAL'},
+        {title: "", image: imagemq, category: 'BAL'},
+        {title: "", image: imagemr, category: 'BAL'},
+        {title: "", image: imagems, category: 'EXP'},
       ]
     }),
 	methods: {
