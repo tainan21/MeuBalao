@@ -29,7 +29,7 @@
   import imagemc from "@/assets/images/imagem3.jpg"
   import imagemd from "@/assets/images/imagem4.jpg"
   import imageme from "@/assets/images/imagem5.jpg"
-  import imagemf from "@/assets/images/imagem6.jpg"
+  import imagemf from "@/assets/images/imagem66.jpg"
   import imagemg from "@/assets/images/imagem77.jpg"
   import imagemh from "@/assets/images/imagem88.jpg"
   import imagemi from "@/assets/images/imagem99.jpg"
