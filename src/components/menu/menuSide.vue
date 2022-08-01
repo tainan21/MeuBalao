@@ -11,11 +11,12 @@
           </template>
           <template #right>
             <div class="barshow">
-              <vs-navbar-item :active="active == 'guide'" item:id="guide">Home</vs-navbar-item>
-              <vs-navbar-item :active="active == 'docs'" id="docs">Empresa</vs-navbar-item>
-              <vs-navbar-item :active="active == 'components'" id="components">Serviços</vs-navbar-item>
-              <vs-navbar-item :active="active == 'components'" id="components">Galeria</vs-navbar-item>
-              <vs-navbar-item :active="active == 'license'" id="license">Contato</vs-navbar-item>
+              <vs-navbar-item :active="active == 'guide'" item:id="guide" @click="setFocus()">Home</vs-navbar-item>
+              <vs-navbar-item :active="active == 'docs'" id="docs" @click="setFocusAbout()">Sobre</vs-navbar-item>
+              <vs-navbar-item :active="active == 'Services'" id="Services" @click="setFocusServices()">Serviços</vs-navbar-item>
+              <vs-navbar-item :active="active == 'Depoiment'" id="Depoiment" @click="setFocusDepoiment()">Depoimentos</vs-navbar-item>
+              <vs-navbar-item :active="active == 'galery'" id="galery" @click="setFocusGallery()">Galeria</vs-navbar-item>
+              <vs-navbar-item :active="active == 'license'" id="license" @click="setFocusContact()">Contato</vs-navbar-item>
             </div>
           </template>
         </vs-navbar>
@@ -46,11 +47,32 @@
     </div>
   </template>
 <script>
+import {EventBus} from "@/eventbus"
   export default {
     data:() => ({
       active: 'home',
       activeSidebar: false
-    })
+    }),
+    methods: {
+      setFocus(){
+        EventBus.$emit('focus')
+      },
+      setFocusAbout(){
+        EventBus.$emit('focusabout')
+      },
+      setFocusServices(){
+        EventBus.$emit('focusservices')
+      },
+      setFocusDepoiment(){
+        EventBus.$emit('focusdepoiment')
+      },
+      setFocusGallery(){
+        EventBus.$emit('focusgallery')
+      },
+      setFocusContact(){
+        EventBus.$emit('focuscontact')
+      },
+    }
   }
   </script>
 
@@ -69,21 +91,5 @@
     display: none;
    }
 }
-.testesupremo{
-    background-color: white;
-    width: 350px;
-    height: 200px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    border-bottom-right-radius: 110%;
-    border-top-right-radius: 25%;
-}
-.logoimg{
-  width: 100px; height: 100px;
-}
+
 </style>

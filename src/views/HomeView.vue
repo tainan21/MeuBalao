@@ -9,6 +9,7 @@
         <h3>Melhor Passeio de <span>Boituva</span></h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit porro nam libero natus error consequatur sed repudiandae eos quo?</p>
         <a href="#" class="btn">Confira Agora!</a>
+        <input type="submit" ref="home"  maxlength="0"  />
     </div>
 
     <div class="image">
@@ -23,12 +24,15 @@
 
 <section class="about" id="about">
     <h1 class="heading"> Sobre nós </h1>
+
     <div class="column">
         <div class="image">
             <img src="@/assets/images/home-img.png" alt="">
         </div>
         <div class="content">
-            <h3>How was this dream born?</h3>
+              <input type="submit" ref="about"  maxlength="0"  />
+
+            <h3>Easy And Perfect Solution For Your Balonismo Fly</h3>
             <p>Em 2013 em uma viajem a Turquia, eu fiz um voo de balão na capadócia, naquela manhã uma semente estava plantada em meu coração, uma paixão pelo balonismo. Anos depois eu tive oportunidade de conhecer o balonismo de Boituva,</p>
             <p> através do meu irmão e Socio, então decidimos comprar um balão e começar não só um negócio mas sim a realização de um sonho.</p>
             <div class="buttons">
@@ -37,6 +41,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 <!-- about section ends -->
@@ -47,6 +52,7 @@
 <section class="features" id="features">
 
     <h1 class="heading"> Serviços </h1>
+    <input type="submit" ref="services"  maxlength="0"  />
 
     <div class="box-container">
 
@@ -75,27 +81,82 @@
 
 </section>
 
+
+<!-- pricing section starts  -->
+
+<section class="pricing" id="pricing">
+    <input type="submit" ref="passeios"  maxlength="0"  />
+
+    <h1 class="heading"> Nossos Passeios </h1>
+    <input type="submit" ref="search"  maxlength="0"  />
+    <div class="box-container">
+
+        <div class="box">
+            <h3 class="title">Voo em Grupo</h3>
+          <!--  <div class="price">$10<span>/monthly</span></div> -->
+            <ul>
+                <li> <i class="fas fa-check"></i> 1000+ voos </li>
+                <li> <i class="fas fa-check"></i> No transaction fees </li>
+                <li> <i class="fas fa-times"></i> unlimited storage </li>
+                <li> <i class="fas fa-times"></i> +40 de balões  </li>
+            </ul>
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">Balonismo Promocional</h3>
+        <!--      <div class="price">$15<span>/monthly</span></div>  -->
+            <ul>
+                <li> <i class="fas fa-check"></i> 1000+ voos </li>
+                <li> <i class="fas fa-check"></i> No transaction fees </li>
+                <li> <i class="fas fa-check"></i> unlimited storage </li>
+                <li> <i class="fas fa-times"></i> +40 de balões  </li>
+            </ul>
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">Voo de Casal</h3>
+         <!--    <div class="price">$25<span>/monthly</span></div>  -->
+            <ul>
+                <li> <i class="fas fa-check"></i> Totalmente Novo! </li>
+                <li> <i class="fas fa-check"></i> No transaction fees </li>
+                <li> <i class="fas fa-check"></i> unlimited storage </li>
+                <li> <i class="fas fa-check"></i> 1 balão no céu </li>
+            </ul>
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- pricing section ends -->
+
+
 <!-- features section ends -->
 
 
 <!-- newsletter  -->
 
+<!--
 <div class="newsletter">
-
+  
     <h1 class="heading">Siga-nos para mais informações</h1>
     <p>Deixe seu instagram que iremos te seguir para mais informações :). Ou siga para receber novidades!</p>
     <form action="">
         <input type="email" placeholder="Deixe seu Instagram">
         <input type="submit" value="Instagram">
     </form>
-
+  
 </div>
-
+-->
 <!-- review section starts  -->
 
 <section class="review" id="review">
 
     <h1 class="heading"> Depoimento de Clientes </h1>
+    <input type="submit" ref="depoiment"  maxlength="0"  />
 
     <div class="box-container">
 
@@ -159,58 +220,9 @@
 
 <!-- review section ends -->
 
-<!-- pricing section starts  -->
-
-<section class="pricing" id="pricing">
-
-    <h1 class="heading"> Nossos Passeios </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3 class="title">Voo em Grupo</h3>
-          <!--  <div class="price">$10<span>/monthly</span></div> -->
-            <ul>
-                <li> <i class="fas fa-check"></i> 1000+ voos </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-times"></i> unlimited storage </li>
-                <li> <i class="fas fa-times"></i> +40 de balões  </li>
-            </ul>
-            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
-        </div>
-
-        <div class="box">
-            <h3 class="title">Balonismo Promocional</h3>
-        <!--      <div class="price">$15<span>/monthly</span></div>  -->
-            <ul>
-                <li> <i class="fas fa-check"></i> 1000+ voos </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-check"></i> unlimited storage </li>
-                <li> <i class="fas fa-times"></i> +40 de balões  </li>
-            </ul>
-            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
-        </div>
-
-        <div class="box">
-            <h3 class="title">Voo de Casal</h3>
-         <!--    <div class="price">$25<span>/monthly</span></div>  -->
-            <ul>
-                <li> <i class="fas fa-check"></i> Totalmente Novo! </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-check"></i> unlimited storage </li>
-                <li> <i class="fas fa-check"></i> 1 balão no céu </li>
-            </ul>
-            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- pricing section ends -->
-
 <!-- GalleryFilter section starts -->
 
+<input type="submit" ref="gallery"  maxlength="0"  />
 <GalleryFilter /> 
 
 <!-- GalleryFilter section ends -->
@@ -226,7 +238,8 @@
 
     <form action="">
 
-        <h1 class="heading">contact us</h1>
+        <h1 class="heading">Contate-nos</h1>
+        <input type="submit" ref="contact"  maxlength="0"  />
 
         <div class="inputBox">
             <input type="text" required>
@@ -274,11 +287,9 @@
             </div>
             <div class="info">
                 <i class="fas fa-map-marker-alt"></i>
-                <p> mumbai, india - 400104 </p>
+                <p> Boituva  </p>
             </div>
         </div>
-
-
         <div class="box">
             <h3 class="">Links</h3>
             <a href="#">home</a>
@@ -288,7 +299,6 @@
             <a href="#">pricing</a>
             <a href="#">contact</a>
         </div>
-
         <div class="box">
             <h3 class="">Siga</h3>
             <a href="https://www.facebook.com/meubalaoboituva">facebook</a>
@@ -296,14 +306,11 @@
             <a href="#">pinterest</a>
             <a href="#">twitter</a>
         </div>
-
         <div class="box">
             <h3 class="">Sobre</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur rerum consectetur architecto ad tempora blanditiis quo aliquid inventore a.</p>
         </div>
-
     </div>
-
     <h1 class="center text-center" style="text-align: center;"> &copy; copyright @ 2021 by TaiCode </h1>
 
 </div>
@@ -313,15 +320,41 @@
 
 <script>
 import GalleryFilter from '@/views/GalleryFilter.vue'
-//import ComponenteWrapper from '@/ComponenteWrapper.vue'
+import {EventBus} from "@/eventbus"
 
   export default {
     components: {
       'GalleryFilter': GalleryFilter
-  //  'ComponenteWrapper': ComponenteWrapper,
      },
+    methods: {
+      setFocus: function(){
+        this.$refs.home.focus();
+      },
+      setFocusAbout: function(){
+        this.$refs.about.focus();
+      },
+      setFocusServices: function(){
+        this.$refs.services.focus();
+      },
+      setFocusDepoiment: function(){
+        this.$refs.depoiment.focus();
+      },
+      setFocusGallery: function(){
+        this.$refs.gallery.focus();
+      },
+      setFocusContact: function(){
+        this.$refs.contact.focus();
+      },
+    },
+    created(){
+      EventBus.$on('focus', () => {this.setFocus()}),
+      EventBus.$on('focusabout', () => {this.setFocusAbout()}),
+      EventBus.$on('focusservices', () => {this.setFocusServices()}),
+      EventBus.$on('focusdepoiment', () => {this.setFocusDepoiment()}),
+      EventBus.$on('focusgallery', () => {this.setFocusGallery()}),
+      EventBus.$on('focuscontact', () => {this.setFocusContact()})
+    },
   }
-  
  </script>
 <style lang="scss" scoped>
 
@@ -334,5 +367,11 @@ import GalleryFilter from '@/views/GalleryFilter.vue'
     width: 100%;
     background-size: cover;
 }
+
+input{
+  -webkit-appearance: none;
+  opacity: 0;
+}
+
 
 </style>

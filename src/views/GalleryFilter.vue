@@ -5,10 +5,10 @@
 			<h1 class="heading">Balonismo</h1>
 		</div>
 		<div class="filters">
-			<span class="filter" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
-			<span class="filter" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">BALONISMO</span>
-			<span class="filter" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">CLIENTES</span>
-			<span class="filter" v-bind:class="{ active: currentFilter === 'EXP' }" v-on:click="setFilter('EXP')">EXPERIÊNCIAS</span>
+			<span class="" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
+			<span class="" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">BALONISMO</span>
+			<span class="" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">CLIENTES</span>
+			<span class="" v-bind:class="{ active: currentFilter === 'EXP' }" v-on:click="setFilter('EXP')">EXPERIÊNCIAS</span>
 		</div>
 	</div>
 	<transition-group class="projects" name="projects" >
@@ -100,22 +100,6 @@ html,body {
 .project-title {
 font-size:16pt	
 }
-
-.filter {
-	font-family:arial;
-	padding: 6px 6px;
-	cursor:pointer;
-	border-radius: 6px;
-	transition: all 0.35s;
-}
-
-.filter.active {
-	box-shadow:0px 1px 3px 0px #00000026;
-}
-
-.filter:hover {
-	background:lightgray;
-} 
 
 .projects {
 	margin-bottom:50px;
