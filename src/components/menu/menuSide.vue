@@ -1,7 +1,7 @@
 <template>
     <div class="hidden">
       <div class="barshow">
-        <vs-navbar shadow square center-collapsed v-model="active">
+        <vs-navbar shadow square center-collapsed>
           <template #left>
               <div class="testesupremo">
                 <div class="image">
@@ -31,16 +31,23 @@
         </vs-navbar>
       <vs-sidebar absolute v-model="active" :open.sync="activeSidebar">
         <template #logo><!-- ...img logo --></template>
-        <vs-sidebar-item id="home">
-          <template #icon>
-            <i class='bx bx-home'></i>
-          </template>Home
+        <vs-sidebar-item id="home"  @click="setFocus()">
+          <template #icon><i class='bx bx-home'></i></template>Home
         </vs-sidebar-item>
-        <vs-sidebar-item id="market">
-          <template #icon><i class='bx bx-grid-alt'></i></template>Home
+        <vs-sidebar-item id="market" @click="setFocusAbout()">
+          <template #icon><i class='bx bx-grid-alt'></i></template>Sobre
         </vs-sidebar-item>
-        <vs-sidebar-item id="Music">
-          <template #icon><i class='bx bxs-music'></i></template>Empresa
+        <vs-sidebar-item id="Music"  @click="setFocusServices()">
+          <template #icon><i class='bx bxs-music'></i></template>Serviços
+        </vs-sidebar-item>
+        <vs-sidebar-item id="Music"  @click="setFocusDepoiment()" >
+          <template #icon><i class='bx bxs-music'></i></template>Depoimentos
+        </vs-sidebar-item>
+        <vs-sidebar-item id="Music" @click="setFocusGallery()">
+          <template #icon><i class='bx bxs-music'></i></template>Galeria
+        </vs-sidebar-item>
+        <vs-sidebar-item id="Music"  @click="setFocusContact()">
+          <template #icon><i class='bx bxs-music'></i></template>Contato
         </vs-sidebar-item>
       </vs-sidebar>
       </div>

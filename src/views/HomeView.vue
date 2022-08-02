@@ -7,7 +7,7 @@
 
     <div class="content">
         <h3>Melhor Passeio de <span>Boituva</span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit porro nam libero natus error consequatur sed repudiandae eos quo?</p>
+        <p>Venha aproveitar o melhor voo de balão de Boituva! Experimente o maior balão de boituva!!</p>
         <a href="#" class="btn">Confira Agora!</a>
         <input type="submit" ref="home"  maxlength="0"  />
     </div>
@@ -30,14 +30,13 @@
             <img src="@/assets/images/home-img.png" alt="">
         </div>
         <div class="content">
-              <input type="submit" ref="about"  maxlength="0"  />
-
-            <h3>Easy And Perfect Solution For Your Balonismo Fly</h3>
+            <input type="submit" ref="about"  maxlength="0"  />
+            <h3>Um sonho ao nosso, diretamente para vocês</h3>
             <p>Em 2013 em uma viajem a Turquia, eu fiz um voo de balão na capadócia, naquela manhã uma semente estava plantada em meu coração, uma paixão pelo balonismo. Anos depois eu tive oportunidade de conhecer o balonismo de Boituva,</p>
             <p> através do meu irmão e Socio, então decidimos comprar um balão e começar não só um negócio mas sim a realização de um sonho.</p>
             <div class="buttons">
-                <a href="https://wa.me/5515997150101?text=Ola" class="btn"> <i class="fab fa-apple"></i> Whatsapp </a>
-                <a href="#" class="btn"> <i class="fab fa-google-play"></i> Instagram </a>
+                <a href="https://wa.me/5515997150101?text=Ola" class="btn"> <i class=" bx bxl-whatsapp icont-rest" ></i> Whatsapp </a>
+                <a href="#" class="btn"> <i class="bx bxl-instagram icont-rest"></i> Instagram </a>
             </div>
         </div>
     </div>
@@ -59,21 +58,21 @@
         <div class="box">
             <img src="@/assets/images/f-icon1.png" alt="">
             <h3>Voo Em Grupo</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <p>Aproveite um momento único, onde diversos balões estarão no ar, uma <b> pintura ao vivo no céu.</b> Faça parte dela, tendo uma imagem que jamais esquecerá!</p>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
         </div>
 
         <div class="box">
             <img src="@/assets/images/f-icon2.png" alt="">
-            <h3>Balonismo Promocional</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <h3>Adaptado a todos!</h3>
+            <p>Somos os únicos em Boituva, com balões <b>PCD</b> abraçando e adaptado para todos! <b>Nossa maior preocupação é a sua felicidade, venha aproveitar conosco!</b></p>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
         </div>
 
         <div class="box">
             <img src="@/assets/images/f-icon3.png" alt="">
             <h3>voo de casal</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <p>Tenha um experiência única com a sua pessoa pessoa <b>amada</b>, crie momentos, imagens e histórias. Criem uma <b> pintura ao vivo do amor de vocês! </b></p>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
         </div>
 
@@ -163,17 +162,17 @@
         <div class="box">
             <i class="fas fa-quote-right"></i>
             <div class="user">
-                <img src="@/assets/images/pic1.png" alt="">
-                <h3>john deo</h3>
+                <img src="@/assets/images/pic1.png" alt="Comentário 1 Boituva - Balonismo">
+                <h3>Suyane Francyne</h3>
                 <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
                 </div>
                 <div class="comment">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                    Empresa responsável, com equipamentos novos e excelentes, equipe qualificada com um diferencial em acessibilidade e respeito aos clientes.
                 </div>
             </div>
         </div>
@@ -181,17 +180,17 @@
         <div class="box">
             <i class="fas fa-quote-right"></i>
             <div class="user">
-                <img src="@/assets/images/pic2.png" alt="">
-                <h3>john deo</h3>
+                <img src="@/assets/images/pic2.png"  alt="Comentário 2 Boituva - balonismo">
+                <h3>Arthur souza</h3>
                 <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
                 </div>
                 <div class="comment">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                    Experiência sem igual. Sensacional o passeio e a receptividade de todos. Recomendo. A vista é íncrivel!
                 </div>
             </div>
         </div>
@@ -199,20 +198,21 @@
         <div class="box">
             <i class="fas fa-quote-right"></i>
             <div class="user">
-                <img src="@/assets/images/pic3.png" alt="">
-                <h3>john deo</h3>
+                <img src="@/assets/images/pic3.png" alt="Comentário 3 Boituva - Balonismo">
+                <h3>Nayara Costa</h3>
                 <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bx-star"></i>
                 </div>
                 <div class="comment">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                    A paisagem é sensacional! Equipe profissional e bem preparada. Nunca esquecei dessa experiência! :)
                 </div>
             </div>
         </div>
+
 
     </div>
 
@@ -278,37 +278,35 @@
         <div class="box">
             <h3>Nosso Contato</h3>
             <div class="info">
-                <i class="fas fa-phone"></i>
+                <i class="bx bx-phone"></i>
                 <p> (15) 99715-0101 </p>
             </div>
             <div class="info">
-                <i class="fas fa-envelope"></i>
+                <i class="bx bx-envelope"></i>
                 <p> meubalaobtv@gmail.com </p>
             </div>
             <div class="info">
-                <i class="fas fa-map-marker-alt"></i>
+                <i class="bx bx-map"></i>
                 <p> Boituva  </p>
             </div>
         </div>
         <div class="box">
             <h3 class="">Links</h3>
             <a href="#">home</a>
-            <a href="#">features</a>
-            <a href="#">about</a>
-            <a href="#">review</a>
-            <a href="#">pricing</a>
-            <a href="#">contact</a>
+            <a href="#">Sobre</a>
+            <a href="#">Services</a>
+            <a href="#">Depoimentos</a>
+            <a href="#">Galeria</a>
+            <a href="#">Contato</a>
         </div>
         <div class="box">
             <h3 class="">Siga</h3>
-            <a href="https://www.facebook.com/meubalaoboituva">facebook</a>
-            <a href="#">instagram</a>
-            <a href="#">pinterest</a>
-            <a href="#">twitter</a>
+            <a href="https://www.facebook.com/meubalaoboituva"><i class='bx bxl-facebook-square icont-rest'></i>facebook</a>
+            <a href="#"><i class='bx bxl-instagram icont-rest'></i>instagram</a>
         </div>
         <div class="box">
             <h3 class="">Sobre</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur rerum consectetur architecto ad tempora blanditiis quo aliquid inventore a.</p>
+            <p>Em 2013 Em Uma Viajem A Turquia, Eu Fiz Um Voo De Balão Na Capadócia, Naquela Manhã Uma Semente Estava Plantada Em Meu Coração, Uma Paixão Pelo Balonismo. Anos Depois Eu Tive Oportunidade De Conhecer O Balonismo De Boituva.</p>
         </div>
     </div>
     <h1 class="center text-center" style="text-align: center;"> &copy; copyright @ 2021 by TaiCode </h1>
@@ -371,6 +369,11 @@ import {EventBus} from "@/eventbus"
 input{
   -webkit-appearance: none;
   opacity: 0;
+}
+
+.icont-rest{
+    position: relative;
+    bottom: -1.4px;
 }
 
 
