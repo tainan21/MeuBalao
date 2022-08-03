@@ -6,9 +6,9 @@
 <section class="home" id="home">
 
     <div class="content">
-        <h3>Melhor Passeio de <span>Boituva</span></h3>
+        <h3>Melhor Passeio de <span class="text-gradient">Boituva</span></h3>
         <p>Venha aproveitar o melhor voo de balão de Boituva! Experimente o maior balão de boituva!!</p>
-        <a href="#" class="btn">Confira Agora!</a>
+        <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira Agora!</a>
         <input type="submit" ref="home"  maxlength="0"  />
     </div>
 
@@ -36,7 +36,7 @@
             <p> através do meu irmão e Socio, então decidimos comprar um balão e começar não só um negócio mas sim a realização de um sonho.</p>
             <div class="buttons">
                 <a href="https://wa.me/5515997150101?text=Ola" class="btn"> <i class=" bx bxl-whatsapp icont-rest" ></i> Whatsapp </a>
-                <a href="#" class="btn"> <i class="bx bxl-instagram icont-rest"></i> Instagram </a>
+                <a href="https://www.instagram.com/meubalaoboituva/" class="btn"> <i class="bx bxl-instagram icont-rest"></i> Instagram </a>
             </div>
         </div>
     </div>
@@ -85,8 +85,10 @@
 
 <section class="pricing" id="pricing">
     <input type="submit" ref="passeios"  maxlength="0"  />
-
-    <h1 class="heading"> Nossos Passeios </h1>
+    <div class="title-container">
+        <h1 class="heading"> Nossos Passeios </h1>
+    </div>
+  
     <input type="submit" ref="search"  maxlength="0"  />
     <div class="box-container">
 
@@ -154,7 +156,9 @@
 
 <section class="review" id="review">
 
-    <h1 class="heading"> Depoimento de Clientes </h1>
+    <div class="title-container">
+	    <h1 class="heading"> Depoimento de Clientes </h1>
+	</div>
     <input type="submit" ref="depoiment"  maxlength="0"  />
 
     <div class="box-container">
@@ -302,7 +306,7 @@
         <div class="box">
             <h3 class="">Siga</h3>
             <a href="https://www.facebook.com/meubalaoboituva"><i class='bx bxl-facebook-square icont-rest'></i>facebook</a>
-            <a href="#"><i class='bx bxl-instagram icont-rest'></i>instagram</a>
+            <a href="https://www.instagram.com/meubalaoboituva/"><i class='bx bxl-instagram icont-rest'></i>instagram</a>
         </div>
         <div class="box">
             <h3 class="">Sobre</h3>
@@ -356,6 +360,14 @@ import {EventBus} from "@/eventbus"
  </script>
 <style lang="scss" scoped>
 
+
+.title-container {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
 .home{
     background-image: url(https://img.freepik.com/fotos-gratis/natureza-anoitecer-nuvem-paisagem-colorida_1203-5705.jpg?w=740&t=st=1659215220~exp=1659215820~hmac=571604d…);
     min-height: 400px;
@@ -375,6 +387,5 @@ input{
     position: relative;
     bottom: -1.4px;
 }
-
 
 </style>

@@ -3,7 +3,7 @@
       <div class="barshow">
         <vs-navbar shadow square center-collapsed>
           <template #left>
-              <div class="testesupremo">
+              <div class="card-logo">
                 <div class="image">
                   <img src="@/assets/images/logo-trans.png" class="logoimg" alt="meubalao">
                 </div>
@@ -28,27 +28,55 @@
               <i class='bx bx-menu'></i>
             </vs-button>
           </template>
+          <template>
+              <div class="card-logo-app">
+                <img src="@/assets/images/logo-trans.png" class="logoimgapp" alt="meubalao">
+              </div>
+          </template>
+          <template #right>
+            <vs-button  href="https://www.instagram.com/meubalaoboituva/"  flat icon>
+              <i class='bx bxl-instagram'></i>
+            </vs-button>
+            <vs-button  href="https://www.facebook.com/meubalaoboituva" flat icon>
+              <i class='bx bxl-facebook'></i>
+            </vs-button>
+            <vs-button  href="https://wa.me/5515997150101?text=Ola"  flat icon>
+              <i class='bx bxl-whatsapp'></i>
+            </vs-button>
+          </template>
         </vs-navbar>
       <vs-sidebar absolute v-model="active" :open.sync="activeSidebar">
         <template #logo><!-- ...img logo --></template>
-        <vs-sidebar-item id="home"  @click="setFocus()">
-          <template #icon><i class='bx bx-home'></i></template>Home
-        </vs-sidebar-item>
-        <vs-sidebar-item id="market" @click="setFocusAbout()">
-          <template #icon><i class='bx bx-grid-alt'></i></template>Sobre
-        </vs-sidebar-item>
-        <vs-sidebar-item id="Music"  @click="setFocusServices()">
-          <template #icon><i class='bx bxs-music'></i></template>Serviços
-        </vs-sidebar-item>
-        <vs-sidebar-item id="Music"  @click="setFocusDepoiment()" >
-          <template #icon><i class='bx bxs-music'></i></template>Depoimentos
-        </vs-sidebar-item>
-        <vs-sidebar-item id="Music" @click="setFocusGallery()">
-          <template #icon><i class='bx bxs-music'></i></template>Galeria
-        </vs-sidebar-item>
-        <vs-sidebar-item id="Music"  @click="setFocusContact()">
-          <template #icon><i class='bx bxs-music'></i></template>Contato
-        </vs-sidebar-item>
+        <div @click="setFocus()">
+          <vs-sidebar-item id="home" >
+            <template #icon> <i class='bx bx-home'></i></template>Home
+          </vs-sidebar-item>
+        </div>
+        <div  @click="setFocusAbout()">
+          <vs-sidebar-item id="market">
+            <template #icon ><i class='bx bx-grid-alt'></i></template>Sobre
+          </vs-sidebar-item>
+        </div>
+        <div @click="setFocusServices()">
+          <vs-sidebar-item id="services"  >
+            <template #icon ><i class='bx bxs-music'></i></template>Serviços
+          </vs-sidebar-item>
+        </div>
+        <div @click="setFocusDepoiment()">
+          <vs-sidebar-item id="depoiment">
+            <template #icon   ><i class='bx bxs-music'></i></template>Depoimentos
+          </vs-sidebar-item>
+        </div>
+        <div @click="setFocusGallery()">
+          <vs-sidebar-item id="galery" >
+            <template #icon><i class='bx bxs-music'></i></template>Galeria
+          </vs-sidebar-item>
+        </div>
+        <div @click="setFocusContact()">
+          <vs-sidebar-item id="contact" >
+            <template #icon ><i class='bx bxs-music'></i></template>Contato
+          </vs-sidebar-item>
+        </div>
       </vs-sidebar>
       </div>
     </div>
@@ -85,18 +113,42 @@ import {EventBus} from "@/eventbus"
 
         
  <style>
+.card-logo-app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 32%; top: 0px; bottom: -10px;
+  background: white;
+  width: 100px;
+  height: 60px;
+  color: white;
+  border-bottom-right-radius: 110%;
+  border-bottom-left-radius: 110%;
+}
+.logoimgapp{
+  position: relative;
+  width: 45px !important;
+  height: 45px !important; 
+}
 @media (max-width: 599px)
 {
   .barshow{
     display: none;
     margin: 0 !important;
    }
+  .vs-navbar-content{
+    position: relative !important;
+  }
 }
 @media (min-width: 600px)
 {
   .topbarshowphone{
     display: none;
    }
+   .vs-navbar-content{
+      position: fixed !important;
+    }
 }
 
 </style>

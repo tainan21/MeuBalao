@@ -17,6 +17,7 @@
     }
 }
 
+
 .filter {
     text-align: center;
     background:var(--gradient);
@@ -28,6 +29,23 @@
     padding:1rem;
 	cursor:pointer;
 	transition: all 0.35s;
+
+}
+.filters_button{
+    background:var(--gradient);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.60s ease;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%) !important;
+    &:hover{
+        background: var(--pink);
+        color: white;
+        border-radius: 50px;
+        border: 1px solid var(--pink);
+    }
 }
 
 .filter.active {
@@ -38,7 +56,7 @@
 	background:lightgray;
 } 
 
-.testesupremo{
+.card-logo{
     background: white;
     width: 275px;
     height: 150px;
@@ -114,6 +132,16 @@ section{
     font-size: 3.5rem;
     text-transform: uppercase;
     padding:1rem;
+}
+.text-gradient{
+    background:var(--gradient);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.box-gradient{
+    display: flex;
+    
 }
 
 header{
