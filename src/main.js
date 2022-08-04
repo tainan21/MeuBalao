@@ -6,6 +6,8 @@ import router from './router'
 import store from './store'
 import Vuesax from 'vuesax'
 import 'vuesax/dist/vuesax.css' //Vuesax styles
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 Vue.use(Vuesax, {})
 Vue.config.productionTip = false
@@ -15,6 +17,11 @@ new Vue({
   store,
   el: '#app',
   methods: {
+
+  },
+  mounted(){
+    AOS.init()
+
   },
   render: h => h(App)
 }).$mount('#app')

@@ -24,20 +24,23 @@
 
 <section class="about" id="about">
     <h1 class="heading"> Sobre nós </h1>
-
+        <div class="displayBox" data-aos="zoom-in">
+        <p>Animated element using zoom-in.</p>
+        </div>
     <div class="column">
         <div class="image">
             <img src="@/assets/images/home-img.png" alt="">
         </div>
         <div class="content">
             <input type="submit" ref="about"  maxlength="0"  />
-            <h3>Um sonho ao nosso, diretamente para vocês</h3>
-            <p>Em 2013 em uma viajem a Turquia, eu fiz um voo de balão na capadócia, naquela manhã uma semente estava plantada em meu coração, uma paixão pelo balonismo. Anos depois eu tive oportunidade de conhecer o balonismo de Boituva,</p>
-            <p> através do meu irmão e Socio, então decidimos comprar um balão e começar não só um negócio mas sim a realização de um sonho.</p>
-            <div class="buttons">
-                <a href="https://wa.me/5515997150101?text=Ola" class="btn"> <i class=" bx bxl-whatsapp icont-rest" ></i> Whatsapp </a>
-                <a href="https://www.instagram.com/meubalaoboituva/" class="btn"> <i class="bx bxl-instagram icont-rest"></i> Instagram </a>
-            </div>
+<div class="displayBox" data-aos="zoom-in" data-aos-duration="1500">                <h3>Um sonho ao nosso, diretamente para vocês</h3>
+                <p>Em 2013 em uma viajem a Turquia, eu fiz um voo de balão na capadócia, naquela manhã uma semente estava plantada em meu coração, uma paixão pelo balonismo. Anos depois eu tive oportunidade de conhecer o balonismo de Boituva,</p>
+                <p> através do meu irmão e Socio, então decidimos comprar um balão e começar não só um negócio mas sim a realização de um sonho.</p>
+                <div class="buttons">
+                    <a href="https://wa.me/5515997150101?text=Ola" class="btn"> <i class=" bx bxl-whatsapp icont-rest" ></i> Whatsapp </a>
+                    <a href="https://www.instagram.com/meubalaoboituva/" class="btn"> <i class="bx bxl-instagram icont-rest"></i> Instagram </a>
+                </div>
+            </div>            
         </div>
     </div>
 
@@ -93,6 +96,7 @@
     <div class="box-container">
 
         <div class="box">
+            <img src="@/assets/images/imagem133.jpg" style="width: 240px; height: 240px;" alt=""></img>
             <h3 class="title">Voo em Grupo</h3>
           <!--  <div class="price">$10<span>/monthly</span></div> -->
             <ul>
@@ -105,6 +109,7 @@
         </div>
 
         <div class="box">
+            <img src="@/assets/images/imagem133.jpg" style="width: 240px; height: 240px;" alt="">
             <h3 class="title">Balonismo Promocional</h3>
         <!--      <div class="price">$15<span>/monthly</span></div>  -->
             <ul>
@@ -117,6 +122,7 @@
         </div>
 
         <div class="box">
+            <img src="@/assets/images/imagem133.jpg" style="width: 240px; height: 240px;" alt="">
             <h3 class="title">Voo de Casal</h3>
          <!--    <div class="price">$25<span>/monthly</span></div>  -->
             <ul>
@@ -233,7 +239,7 @@
 
 
 <!-- contact section starts  -->
-
+<!--
 <section class="contact" id="contact">
 
     <div class="image">
@@ -270,7 +276,7 @@
     </form>
 
 </section>
-
+-->
 <!-- contact section edns -->
 
 <!-- footer section starts  -->
@@ -325,6 +331,10 @@ import GalleryFilter from '@/views/GalleryFilter.vue'
 import {EventBus} from "@/eventbus"
 
   export default {
+    data:() => ({
+        options: [],
+        active: false
+    }),
     components: {
       'GalleryFilter': GalleryFilter
      },

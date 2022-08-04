@@ -14,8 +14,17 @@
 	<transition-group class="projects" name="projects" >
 		<div class="project" v-if="currentFilter === project.category || currentFilter === 'ALL'" v-bind:key="project.title" v-for="project in projects">
 			<div class="project-image-wrapper">
-				<img class="project-image" v-bind:src="project.image">
-				<div class="gradient-overlay"></div>
+				<div class="Product_Image" @click="active=!active">
+                    <img v-bind:src="project.image" class="img-fluid" alt="Responsive image" style="width: 100%; height: 390px; background-size: cover; object-fit: cover;">
+                </div>
+                <vs-dialog blur v-model="active">
+                    <img v-bind:src="project.image" class="img-fluid" alt="Responsive image" style="width: 100%; height: 400px; background-size: cover; object-fit: cover;"></img>
+                    <template #footer>
+                    <div class="footer-dialog">
+                        <h2 class="Product_Info-Title"></h2>
+                    </div>
+                    </template>
+                </vs-dialog>
 			</div>
 		</div>
 	</transition-group>
