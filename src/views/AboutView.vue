@@ -13,27 +13,46 @@
 	</div>
 	<transition-group class="projects" name="projects" >
 		<div class="project" v-if="currentFilter === project.category || currentFilter === 'ALL'" v-bind:key="project.title" v-for="project in projects">
-			<div class="project-image-wrapper">
-        <div class="Product_Image" @click="active=!active">
-            <img class="project-image img-fluid" v-bind:src="project.image" style="width: 100%; height: 390px; background-size: cover; object-fit: cover;">
+			<vs-card type="2">
+    <template #title>
+      <h3>{{project.title}}</h3>
+    </template>
+    <template shadow #img >
+      <div @click="active=!active">
+        <img v-bind:src="project.image">
+        <div class="center">
+          <vs-dialog blur v-model="active">
+            <template #header>
+              <h4 class="not-margin"><b>{{project.title}}</b></h4>
+            </template>
+            <img v-bind:src="project.image" class="img-fluid" alt="Responsive image" style="width: 100%; height: 400px; background-size: cover; object-fit: cover;"></img>
+            <template #footer>
+              <div class="footer-dialog">
+                  <h2 class="Product_Info-Title"><b>{{project.title}}</b></h2>
+                  <h2 class="Product_Info-Description">Informações sobre a imagem</h2>
+              </div>
+            </template>
+          </vs-dialog>
         </div>
-        <vs-dialog blur v-model="active">
-          <template #header>
-            <h4 class="not-margin"><b>{{project.title}}</b></h4>
-          </template>
-          <template #footer>
-            <div class="footer-dialog">
-              <img v-bind:src="project.image" style="width: 100px; height: 100px;" alt="">
-            </div>
-          </template>
-      </vs-dialog>
-				<div class="gradient-overlay"></div>
-			</div>
+      </div>
+    </template>
+      <template #text>
+        <p>{{project.desc}}</p>
+    </template>
+    <template #interactions>
+      <vs-button primary shadow icon @click="active=!active">
+        <i class='bx bx-low-vision'></i>
+      </vs-button>
+      <vs-button class="btn-chat" shadow primary @click="active=!active">
+        <i class='bx bx-info-circle' ></i>
+      </vs-button>
+    </template>
+  </vs-card>
+    
 		</div>
 	</transition-group>
-      <div class="center">
-      <button @click="active=!active">active</button>
-    </div>
+  
+
 </div>
 
 </template>
@@ -41,30 +60,14 @@
 <script>
   import imagema from "@/assets/images/imagem1.jpg"
   import imagemb from "@/assets/images/imagem2.jpg"
-  import imagemc from "@/assets/images/imagem3.jpg"
-  import imagemd from "@/assets/images/imagem4.jpg"
-  import imageme from "@/assets/images/imagem5.jpg"
-  import imagemf from "@/assets/images/imagem66.jpg"
-  import imagemg from "@/assets/images/imagem77.jpg"
-  import imagemh from "@/assets/images/imagem88.jpg"
-  import imagemi from "@/assets/images/imagem99.jpg"
-  import imagemj from "@/assets/images/imagem100.jpg"
-  import imagemk from "@/assets/images/imagem111.jpg"
-  import imagemm from "@/assets/images/imagem122.jpg"
-  import imagemn from "@/assets/images/imagem133.jpg"
-  import imagemo from "@/assets/images/imagem144.jpg"
-  import imagemp from "@/assets/images/imagem155.jpg"
-  import imagemq from "@/assets/images/imagem166.jpg"
-  import imagemr from "@/assets/images/imagem177.jpg"
-  import imagems from "@/assets/images/imagem188.jpg"
   export default {
     data:() => ({
       options: [],
       active: false,
       currentFilter: 'ALL',
       projects: [
-        {title: "Artwork", image: imagema, category: 'BAL'},
-        {title: "Charcoal", image: imagemb, category: 'BAL'},
+        {title: "Artwork", image: imagema, desc: "texto alternativo", category: 'BAL'},
+        {title: "Charcoal", image: imagemb, desc: "", category: 'BAL'},
       ]
     }),
 	methods: {
@@ -133,19 +136,30 @@ html,body {
             line-height: 150%;
             color: rgb(127, 143, 159);
         }
-        &_Image{
-            background: #000;
-            width: 100%;
-            color: white;
-            display: flex;
-            border-radius: 4px;
-            margin-bottom: 20px;
-            object-fit: cover;
-        }
     }
-}
-.Product_Image{
-    cursor: pointer;
+    &_Image{
+      background: #000;
+      color: white;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      transition: all .35s ease-in-out;
+      width: 100%; 
+      background-size: cover; 
+      object-fit: cover;
+      & img{
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        &:hover{ 
+          width: 120%;
+          transition: all .35s ease-in-out;
+        }
+      }
+      &:hover{ 
+        width: 120%;
+        transition: all .35s ease-in-out;
+      }
+  }
 }
 
 .title {
@@ -200,11 +214,8 @@ font-size:16pt
 
 .project {
 	transition: all .35s ease-in-out;
-	margin:10px;
-	box-shadow:0px 2px 8px lightgrey;
+	margin: 10px;
 	border-radius:3px;
-	width:180px;
-	height:200px;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -230,12 +241,5 @@ font-size:16pt
 	border-top-right-radius:3px;
 }
 
-.project-image {
-	width:100%;
-	height:150px;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
-	border-top-left-radius:3px;
-	border-top-right-radius:3px;
-}
+
 </style>

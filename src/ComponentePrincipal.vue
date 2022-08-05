@@ -2,12 +2,10 @@
   <div>
     <div class="barshow">
       <MenuVue />
-      <MenuVueBottom />
       <router-view/>
     </div>
     <div class="topbarshowphone">
       <MenuVue />
-      <MenuVueBottom />
       <router-view/>
     </div>
   </div>
@@ -16,11 +14,9 @@
 <script>
 //import MenuVue from '@/components/menu/MenuVue.vue'
 import MenuVue from '@/components/menu/menuSide.vue'
-import MenuVueBottom from '@/components/menu/menuBottom.vue'
   export default {
     components: {
       'MenuVue': MenuVue,
-      'MenuVueBottom': MenuVueBottom,
     },
   }
  </script>

@@ -33,7 +33,8 @@
         </div>
         <div class="content">
             <input type="submit" ref="about"  maxlength="0"  />
-<div class="displayBox" data-aos="zoom-in" data-aos-duration="1500">                <h3>Um sonho ao nosso, diretamente para vocês</h3>
+                <div class="displayBox" data-aos="zoom-in" data-aos-duration="1500">
+                    <h3>Um sonho ao nosso, diretamente para vocês</h3>
                 <p>Em 2013 em uma viajem a Turquia, eu fiz um voo de balão na capadócia, naquela manhã uma semente estava plantada em meu coração, uma paixão pelo balonismo. Anos depois eu tive oportunidade de conhecer o balonismo de Boituva,</p>
                 <p> através do meu irmão e Socio, então decidimos comprar um balão e começar não só um negócio mas sim a realização de um sonho.</p>
                 <div class="buttons">
@@ -58,21 +59,33 @@
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box "  
+        data-aos="slide-right"
+        data-aos-easing="ease-in"
+        data-aos-duration="1000"
+        data-aos-delay="300">
             <img src="@/assets/images/f-icon1.png" alt="">
             <h3>Voo Em Grupo</h3>
             <p>Aproveite um momento único, onde diversos balões estarão no ar, uma <b> pintura ao vivo no céu.</b> Faça parte dela, tendo uma imagem que jamais esquecerá!</p>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
         </div>
 
-        <div class="box">
+        <div class="box"
+        data-aos="zoom-in"
+        data-aos-ease="ease"
+        data-aos-duration="1000"
+        data-aos-delay='300'>
             <img src="@/assets/images/f-icon2.png" alt="">
             <h3>Adaptado a todos!</h3>
             <p>Somos os únicos em Boituva, com balões <b>PCD</b> abraçando e adaptado para todos! <b>Nossa maior preocupação é a sua felicidade, venha aproveitar conosco!</b></p>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
         </div>
 
-        <div class="box">
+        <div class="box"
+        data-aos="slide-left"
+        data-aos-easing="ease-in"
+        data-aos-duration="1000"
+        data-aos-delay="300">
             <img src="@/assets/images/f-icon3.png" alt="">
             <h3>voo de casal</h3>
             <p>Tenha um experiência única com a sua pessoa pessoa <b>amada</b>, crie momentos, imagens e histórias. Criem uma <b> pintura ao vivo do amor de vocês! </b></p>
@@ -95,7 +108,12 @@
     <input type="submit" ref="search"  maxlength="0"  />
     <div class="box-container">
 
-        <div class="box">
+        <div class="box"
+        data-aos="zoom-in"
+        data-aos-ease="ease"
+        data-aos-duration="1000"
+        data-aos-delay='300'
+        >
             <img src="@/assets/images/imagem133.jpg" style="width: 240px; height: 240px;" alt=""></img>
             <h3 class="title">Voo em Grupo</h3>
           <!--  <div class="price">$10<span>/monthly</span></div> -->
@@ -108,7 +126,12 @@
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
         </div>
 
-        <div class="box">
+        <div class="box"
+        data-aos="zoom-in"
+        data-aos-ease="ease"
+        data-aos-duration="1000"
+        data-aos-delay='300'
+        >
             <img src="@/assets/images/imagem133.jpg" style="width: 240px; height: 240px;" alt="">
             <h3 class="title">Balonismo Promocional</h3>
         <!--      <div class="price">$15<span>/monthly</span></div>  -->
@@ -121,7 +144,12 @@
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
         </div>
 
-        <div class="box">
+        <div class="box"
+        data-aos="zoom-in"
+        data-aos-ease="ease"
+        data-aos-duration="1000"
+        data-aos-delay='300'
+        >
             <img src="@/assets/images/imagem133.jpg" style="width: 240px; height: 240px;" alt="">
             <h3 class="title">Voo de Casal</h3>
          <!--    <div class="price">$25<span>/monthly</span></div>  -->
@@ -169,7 +197,12 @@
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box"
+            data-aos="zoom-in"
+            data-aos-ease="ease"
+            data-aos-duration="1000"
+            data-aos-delay='300'
+            >
             <i class="fas fa-quote-right"></i>
             <div class="user">
                 <img src="@/assets/images/pic1.png" alt="Comentário 1 Boituva - Balonismo">
@@ -187,7 +220,12 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="box"
+            data-aos="zoom-in"
+            data-aos-ease="ease"
+            data-aos-duration="1000"
+            data-aos-delay='300'
+        >
             <i class="fas fa-quote-right"></i>
             <div class="user">
                 <img src="@/assets/images/pic2.png"  alt="Comentário 2 Boituva - balonismo">
@@ -205,7 +243,11 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="box"
+            data-aos="zoom-in"
+            data-aos-ease="ease"
+            data-aos-duration="1000"
+            data-aos-delay='300'>
             <i class="fas fa-quote-right"></i>
             <div class="user">
                 <img src="@/assets/images/pic3.png" alt="Comentário 3 Boituva - Balonismo">
@@ -281,7 +323,11 @@
 
 <!-- footer section starts  -->
 
-<div class="footer">
+<div class="footer"
+            data-aos="zoom-in"
+            data-aos-ease="ease"
+            data-aos-duration="1000"
+            data-aos-delay='300'>
 
     <div class="box-container">
 

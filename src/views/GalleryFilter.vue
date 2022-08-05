@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+<div id="app">
 	<div class="title-container">
 		<div>
 			<h1 class="heading">Balonismo</h1>
@@ -13,21 +13,46 @@
 	</div>
 	<transition-group class="projects" name="projects" >
 		<div class="project" v-if="currentFilter === project.category || currentFilter === 'ALL'" v-bind:key="project.title" v-for="project in projects">
-			<div class="project-image-wrapper">
-				<div class="Product_Image" @click="active=!active">
-                    <img v-bind:src="project.image" class="img-fluid" alt="Responsive image" style="width: 100%; height: 390px; background-size: cover; object-fit: cover;">
-                </div>
-                <vs-dialog blur v-model="active">
-                    <img v-bind:src="project.image" class="img-fluid" alt="Responsive image" style="width: 100%; height: 400px; background-size: cover; object-fit: cover;"></img>
-                    <template #footer>
-                    <div class="footer-dialog">
-                        <h2 class="Product_Info-Title"></h2>
-                    </div>
-                    </template>
-                </vs-dialog>
-			</div>
+			<vs-card type="2">
+    <template #title>
+      <h3>{{project.title}}</h3>
+    </template>
+    <template shadow #img >
+      <div @click="active=!active">
+        <img v-bind:src="project.image">
+        <div class="center">
+          <vs-dialog blur v-model="active">
+            <template #header>
+              <h4 class="not-margin"><b>{{project.title}}</b></h4>
+            </template>
+            <img v-bind:src="project.image" class="img-fluid" alt="Responsive image" style="width: 100%; height: 400px; background-size: cover; object-fit: cover;"></img>
+            <template #footer>
+              <div class="footer-dialog">
+                  <h2 class="Product_Info-Title"><b>{{project.title}}</b></h2>
+                  <h2 class="Product_Info-Description">Informações sobre a imagem</h2>
+              </div>
+            </template>
+          </vs-dialog>
+        </div>
+      </div>
+    </template>
+      <template #text>
+        <p>{{project.desc}}</p>
+    </template>
+    <template #interactions>
+      <vs-button primary shadow icon @click="active=!active">
+        <i class='bx bx-low-vision'></i>
+      </vs-button>
+      <vs-button class="btn-chat" shadow primary @click="active=!active">
+        <i class='bx bx-info-circle' ></i>
+      </vs-button>
+    </template>
+  </vs-card>
+    
 		</div>
 	</transition-group>
+  
+
 </div>
 
 </template>
@@ -54,25 +79,10 @@
   export default {
     data:() => ({
       currentFilter: 'ALL',
+      active: false,
       projects: [
         {title: "Artwork", image: imagema, category: 'BAL'},
         {title: "Charcoal", image: imagemb, category: 'BAL'},
-        {title: "Sketching", image: imagemc, category: 'EXP'},
-        {title: "Acrillic", image: imagemd, category: 'CLI'},
-        {title: "Pencil", image: imageme, category: 'EXP'},
-        {title: "Pen", image: imagemf, category: 'BAL'},
-        {title: "Inking", image: imagemg, category: 'CLI'},
-        {title: "", image: imagemh, category: 'BAL'},
-        {title: "", image: imagemi, category: 'BAL'},
-        {title: "", image: imagemj, category: 'BAL'},
-        {title: "", image: imagemk, category: 'BAL'},
-        {title: "", image: imagemm, category: 'BAL'},
-        {title: "", image: imagemn, category: 'BAL'},
-        {title: "", image: imagemo, category: 'BAL'},
-        {title: "", image: imagemp, category: 'BAL'},
-        {title: "", image: imagemq, category: 'BAL'},
-        {title: "", image: imagemr, category: 'BAL'},
-        {title: "", image: imagems, category: 'EXP'},
       ]
     }),
 	methods: {
@@ -98,6 +108,73 @@ html,body {
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
+}
+
+.Product_Info-Title{
+    color: rgb(0, 0, 0);
+    font-family: Poppins,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 15px 10px;
+    word-break: break-word;
+}
+.Product_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Product{
+    &_Button{
+            display: flex;
+            align-items: center;
+            background: var(--bg-color);
+            justify-content: center;
+            color: white;
+        }
+    &_Info{
+        &-Price{
+            color:rgb(48, 51, 60);
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 120%;
+        }
+        &-Title{
+            word-break: break-word;
+        }
+        &-Description{
+            font-size: 16px;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 150%;
+            color: rgb(127, 143, 159);
+        }
+    }
+    &_Image{
+      background: #000;
+      color: white;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      transition: all .35s ease-in-out;
+      width: 100%; 
+      background-size: cover; 
+      object-fit: cover;
+      & img{
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        &:hover{ 
+          width: 120%;
+          transition: all .35s ease-in-out;
+        }
+      }
+      &:hover{ 
+        width: 120%;
+        transition: all .35s ease-in-out;
+      }
+  }
 }
 
 .title {
@@ -152,11 +229,8 @@ font-size:16pt
 
 .project {
 	transition: all .35s ease-in-out;
-	margin:10px;
-	box-shadow:0px 2px 8px lightgrey;
+	margin: 10px;
 	border-radius:3px;
-	width:180px;
-	height:200px;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -174,20 +248,13 @@ font-size:16pt
 	height:150px;
 	opacity:0.09;
 	background: 
-		linear-gradient(to bottom, rgba(0,210,247,0.65) 0%,rgba(0,210,247,0.64) 1%,rgba(0,0,0,0) 100%), 
-		linear-gradient(to top, rgba(247,0,156,0.65) 0%,rgba(247,0,156,0.64) 1%,rgba(0,0,0,0) 100%);
+	linear-gradient(to bottom, rgba(0,210,247,0.65) 0%,rgba(0,210,247,0.64) 1%,rgba(0,0,0,0) 100%), 
+	linear-gradient(to top, rgba(247,0,156,0.65) 0%,rgba(247,0,156,0.64) 1%,rgba(0,0,0,0) 100%);
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
 	border-top-left-radius:3px;
 	border-top-right-radius:3px;
 }
 
-.project-image {
-	width:100%;
-	height:150px;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
-	border-top-left-radius:3px;
-	border-top-right-radius:3px;
-}
+
 </style>

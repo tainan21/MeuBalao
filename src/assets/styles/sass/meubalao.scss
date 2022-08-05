@@ -5,6 +5,11 @@
     --pink:#F83292;
     --gradient:linear-gradient(90deg, var(--purple), var(--pink));
 }
+
+.vs-card-content.type-2 .vs-card__text{
+    width: 100% !important;
+ 
+}
 .vs-sidebar-content{
     width: calc(100% - 20px) !important;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%) !important;
