@@ -6,9 +6,9 @@
 		</div>
 		<div class="filters">
 			<span class="filters_button" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
-			<span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">BALONISMO</span>
-			<span class="filters_button" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">CLIENTES</span>
-			<span class="filters_button" v-bind:class="{ active: currentFilter === 'EXP' }" v-on:click="setFilter('EXP')">EXPERIÊNCIAS</span>
+			<span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">publicitário</span>
+			<span class="filters_button" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">Casais</span>
+			<span class="filters_button" v-bind:class="{ active: currentFilter === 'EXP' }" v-on:click="setFilter('EXP')">Grupo</span>
 		</div>
 	</div>
 	<transition-group class="projects" name="projects" >

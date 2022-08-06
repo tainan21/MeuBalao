@@ -24,9 +24,6 @@
 
 <section class="about" id="about">
     <h1 class="heading"> Sobre nós </h1>
-        <div class="displayBox" data-aos="zoom-in">
-        <p>Animated element using zoom-in.</p>
-        </div>
     <div class="column">
         <div class="image">
             <img src="@/assets/images/home-img.png" alt="">
@@ -36,7 +33,6 @@
                 <div class="displayBox" data-aos="zoom-in" data-aos-duration="1500">
                     <h3>Um sonho ao nosso, diretamente para vocês</h3>
                 <p>Em 2013 em uma viajem a Turquia, eu fiz um voo de balão na capadócia, naquela manhã uma semente estava plantada em meu coração, uma paixão pelo balonismo. Anos depois eu tive oportunidade de conhecer o balonismo de Boituva,</p>
-                <p> através do meu irmão e Socio, então decidimos comprar um balão e começar não só um negócio mas sim a realização de um sonho.</p>
                 <div class="buttons">
                     <a href="https://wa.me/5515997150101?text=Ola" class="btn"> <i class=" bx bxl-whatsapp icont-rest" ></i> Whatsapp </a>
                     <a href="https://www.instagram.com/meubalaoboituva/" class="btn"> <i class="bx bxl-instagram icont-rest"></i> Instagram </a>
@@ -66,11 +62,11 @@
         data-aos-delay="300">
             <img src="@/assets/images/f-icon1.png" alt="">
             <h3>Voo Em Grupo</h3>
-            <p>Aproveite um momento único, onde diversos balões estarão no ar, uma <b> pintura ao vivo no céu.</b> Faça parte dela, tendo uma imagem que jamais esquecerá!</p>
+            <p>O voo em grupo tem a capacidade entre 7 e 28 pessoas. É indicado para famílias ou grupos de amigos. Crianças acompanhadas dos responsáveis também podem voar! O voo tem duração entre 50min e 1h10.</p>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
         </div>
-
-        <div class="box"
+        <!--
+          <div class="box"
         data-aos="zoom-in"
         data-aos-ease="ease"
         data-aos-duration="1000"
@@ -78,6 +74,17 @@
             <img src="@/assets/images/f-icon2.png" alt="">
             <h3>Adaptado a todos!</h3>
             <p>Somos os únicos em Boituva, com balões <b>PCD</b> abraçando e adaptado para todos! <b>Nossa maior preocupação é a sua felicidade, venha aproveitar conosco!</b></p>
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
+        </div>  
+        -->
+        <div class="box"
+        data-aos="zoom-in"
+        data-aos-ease="ease"
+        data-aos-duration="1000"
+        data-aos-delay='300'>
+            <img src="@/assets/images/f-icon2.png" alt="">
+            <h3>Voo Publicitário!</h3>
+            <p></p>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
         </div>
 
@@ -88,7 +95,8 @@
         data-aos-delay="300">
             <img src="@/assets/images/f-icon3.png" alt="">
             <h3>voo de casal</h3>
-            <p>Tenha um experiência única com a sua pessoa pessoa <b>amada</b>, crie momentos, imagens e histórias. Criem uma <b> pintura ao vivo do amor de vocês! </b></p>
+            <p>O voo em casal é realizado com até 2 passageiros. É indicado para casais ou pessoas que querem comemorar uma data especial, uma conquista ou até mesmo
+                 um pedido de casamento! O voo acontece em  Boituva e tem duração entre 50min e 1h10.</p>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
         </div>
 
@@ -114,7 +122,7 @@
         data-aos-duration="1000"
         data-aos-delay='300'
         >
-            <img src="@/assets/images/imagem133.jpg" style="width: 240px; height: 240px;" alt=""></img>
+            <img src="@/assets/images/vooemgrupo.jpeg" style="width: 240px; height: 240px;" alt=""></img>
             <h3 class="title">Voo em Grupo</h3>
           <!--  <div class="price">$10<span>/monthly</span></div> -->
             <ul>
@@ -132,8 +140,8 @@
         data-aos-duration="1000"
         data-aos-delay='300'
         >
-            <img src="@/assets/images/imagem133.jpg" style="width: 240px; height: 240px;" alt="">
-            <h3 class="title">Balonismo Promocional</h3>
+            <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px;" alt="">
+            <h3 class="title">Voo publicitário</h3>
         <!--      <div class="price">$15<span>/monthly</span></div>  -->
             <ul>
                 <li> <i class="fas fa-check"></i> 1000+ voos </li>
@@ -150,7 +158,7 @@
         data-aos-duration="1000"
         data-aos-delay='300'
         >
-            <img src="@/assets/images/imagem133.jpg" style="width: 240px; height: 240px;" alt="">
+            <img src="@/assets/images/voocasal.jpeg" style="width: 240px; height: 240px;" alt="">
             <h3 class="title">Voo de Casal</h3>
          <!--    <div class="price">$25<span>/monthly</span></div>  -->
             <ul>
@@ -321,7 +329,7 @@
 -->
 <!-- contact section edns -->
 
-<!-- footer section starts  -->
+<!-- footer section starts 
 
 <div class="footer"
             data-aos="zoom-in"
@@ -368,7 +376,7 @@
     <h1 class="center text-center" style="text-align: center;"> &copy; copyright @ 2021 by TaiCode </h1>
 
 </div>
-
+ -->
   </div>
 </template>
 
@@ -415,17 +423,16 @@ import {EventBus} from "@/eventbus"
   }
  </script>
 <style lang="scss" scoped>
-
-
-.title-container {
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
-}
+    .title-container {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
 
 .home{
-    background-image: url(https://img.freepik.com/fotos-gratis/natureza-anoitecer-nuvem-paisagem-colorida_1203-5705.jpg?w=740&t=st=1659215220~exp=1659215820~hmac=571604d…);
+    background:url(@/assets/images/ceu.jpg) no-repeat;
+//    background-image: url(https://img.freepik.com/fotos-gratis/natureza-anoitecer-nuvem-paisagem-colorida_1203-5705.jpg?w=740&t=st=1659215220~exp=1659215820~hmac=571604d…);
     min-height: 400px;
     background-attachment: fixed;
     background-position: 50%;
