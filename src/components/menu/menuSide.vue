@@ -1,7 +1,12 @@
 <template>
     <div class="hidden">
       <div class="barshow">
-        <vs-navbar shadow square center-collapsed>
+        <vs-navbar shadow square center-collapsed
+        data-aos="zoom-in"
+        data-aos-ease="ease"
+        data-aos-duration="1500"
+        data-aos-delay='400'
+        >
           <template #left>
               <div class="card-logo">
                 <div class="image">

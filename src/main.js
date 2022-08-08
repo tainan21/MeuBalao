@@ -9,7 +9,14 @@ import 'vuesax/dist/vuesax.css' //Vuesax styles
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-Vue.use(Vuesax, {})
+import Flicking from "@egjs/vue-flicking";
+import "@egjs/vue-flicking/dist/flicking.css";
+import { Fade, Parallax, AutoPlay } from "@egjs/flicking-plugins";
+
+Vue.use(Flicking);
+
+
+Vue.use(Vuesax,  {})
 Vue.config.productionTip = false
 
 new Vue({
@@ -21,7 +28,6 @@ new Vue({
   },
   mounted(){
     AOS.init()
-
   },
   render: h => h(App)
 }).$mount('#app')

@@ -1,17 +1,31 @@
 <template>
 <div id="app">
-	<div class="title-container">
+	<div class="title-container"
+          data-aos="zoom-in"
+        data-aos-ease="ease"
+        data-aos-duration="1000"
+        data-aos-delay='300'>
 		<div>
-			<h1 class="heading">Balonismo</h1>
+			<h1 class="heading"
+        data-aos="zoom-in"
+        data-aos-ease="ease"
+        data-aos-duration="1200"
+        data-aos-delay='400'
+        >Balonismo</h1>
 		</div>
-		<div class="filters">
+		<div class="filters"
+>
 			<span class="filters_button" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
 			<span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">publicitário</span>
 			<span class="filters_button" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">Casais</span>
 			<span class="filters_button" v-bind:class="{ active: currentFilter === 'EXP' }" v-on:click="setFilter('EXP')">Grupo</span>
 		</div>
 	</div>
-	<transition-group class="projects" name="projects" >
+	<transition-group class="projects" name="projects"
+          data-aos="slide-right"
+        data-aos-ease="ease"
+        data-aos-duration="1000"
+        data-aos-delay='300' >
 		<div class="project" v-if="currentFilter === project.category || currentFilter === 'ALL'" v-bind:key="project.title" v-for="project in projects">
 			<vs-card type="2">
     <template #title>

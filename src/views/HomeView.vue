@@ -6,13 +6,26 @@
 <section class="home" id="home">
 
     <div class="content">
-        <h3>Melhor Passeio de <span class="text-gradient">Boituva</span></h3>
-        <p>Venha aproveitar o melhor voo de balão de Boituva! Experimente o maior balão de boituva!!</p>
-        <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira Agora!</a>
+        <h3 data-aos="slide-right"
+        data-aos-easing="ease-in"
+        data-aos-duration="1000"
+        data-aos-delay="300">Melhor Passeio de <span class="text-gradient">Boituva</span></h3>
+        <p data-aos="slide-right"
+        data-aos-easing="ease-in"
+        data-aos-duration="1000"
+        data-aos-delay="300">Venha aproveitar o melhor voo de balão de Boituva! Experimente o maior balão de boituva!!</p>
+        <a href="https://wa.me/5515997150101?text=Ola" class="btn"
+        data-aos="slide-right"
+        data-aos-easing="ease-in"
+        data-aos-duration="1000"
+        data-aos-delay="300">Confira Agora!</a>
         <input type="submit" ref="home"  maxlength="0"  />
     </div>
 
-    <div class="image">
+    <div class="image"         data-aos="slide-left"
+        data-aos-easing="ease-in"
+        data-aos-duration="1000"
+        data-aos-delay="300">
         <img src="@/assets/images/home-img.png" alt="">
     </div>
 
@@ -93,7 +106,7 @@
         data-aos-easing="ease-in"
         data-aos-duration="1000"
         data-aos-delay="300">
-            <img src="@/assets/images/f-icon3.png" alt="">
+            <img src="@/assets/images/f-icon2.png" alt="">
             <h3>voo de casal</h3>
             <p>O voo em casal é realizado com até 2 passageiros. É indicado para casais ou pessoas que querem comemorar uma data especial, uma conquista ou até mesmo
                  um pedido de casamento! O voo acontece em  Boituva e tem duração entre 50min e 1h10.</p>

@@ -6,9 +6,29 @@
     --gradient:linear-gradient(90deg, var(--purple), var(--pink));
 }
 
+//flicking
+.flicking-viewport.vertical, .flicking-viewport.vertical > .flicking-camera {
+    display: inline-block;
+    height: 300px !important;
+}
+
+
+.banner-rotate{
+    width: 100%;
+   }
+   .box-coments{
+     width: 300px !important;
+     right: 35%;
+     flex: none !important;
+   }
+   .box-img{
+     width: 240px;
+     height: 240px;
+     margin: auto;
+   }
+
 .vs-card-content.type-2 .vs-card__text{
     width: 100% !important;
- 
 }
 .vs-sidebar-content{
     width: calc(100% - 20px) !important;
