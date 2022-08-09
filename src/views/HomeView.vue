@@ -6,47 +6,47 @@
         <input type="submit" ref="home"  maxlength="0"  />
         <Flicking :options="{ circular: true, horizontal: true }" :plugins="plugins">
         <div class="content banner-rotate">
-              <h3 data-aos="slide-right"
+              <h3 data-aos="zoom-in"
               data-aos-easing="ease-in"
               data-aos-duration="1000"
               data-aos-delay="300">Voe com a  <span class="text-gradient">Meu Balão</span></h3>
               <a href="https://wa.me/5515997150101?text=Ola" class="btn"
-              data-aos="slide-right"
+              data-aos="zoom-in"
               data-aos-easing="ease-in"
               data-aos-duration="1000"
               data-aos-delay="300">Confira Agora!</a>
         </div>   
         <div class="content banner-rotate">
-              <h3 data-aos="slide-right"
+              <h3 data-aos="zoom-in"
               data-aos-easing="ease-in"
               data-aos-duration="1000"
               data-aos-delay="300">Melhor Voo <span class="text-gradient">Boituva</span></h3>
               <a href="https://wa.me/5515997150101?text=Ola" class="btn"
-              data-aos="slide-right"
+              data-aos="zoom-in"
               data-aos-easing="ease-in"
               data-aos-duration="1000"
               data-aos-delay="300">Chame!</a>
         </div>  
         <div class="content banner-rotate">
-              <h3 data-aos="slide-right"
+              <h3 data-aos="zoom-in"
               data-aos-easing="ease-in"
               data-aos-duration="1000"
               data-aos-delay="300">O melhor voo <span class="text-gradient">Boituva</span></h3>
               <a href="https://wa.me/5515997150101?text=Ola" class="btn"
-              data-aos="slide-right"
+              data-aos="zoom-in"
               data-aos-easing="ease-in"
               data-aos-duration="1000"
               data-aos-delay="300">Chame!</a>
         </div>          
         </Flicking>
     <Flicking :options="{ circular: true, horizontal: false }">
-      <div class="image image-balon" data-aos="slide-left"
+      <div class="image image-balon" data-aos="zoom-in"
           data-aos-easing="ease-in"
           data-aos-duration="1000"
           data-aos-delay="300">
           <img src="@/assets/images/home-img.png" style="width: 100%; height: 100%; object-fit: cover;" alt="">
       </div>
-       <div class="image image-balon"         data-aos="slide-left"
+       <div class="image image-balon"         data-aos="zoom-in"
           data-aos-easing="ease-in"
           data-aos-duration="1000"
           data-aos-delay="300">
@@ -127,7 +127,7 @@
         </div>
 
         <div class="box"
-        data-aos="slide-left"
+        data-aos="zoom-in"
         data-aos-easing="ease-in"
         data-aos-duration="1000"
         data-aos-delay="300">
@@ -395,20 +395,6 @@
                 <i class="bx bx-map"></i>
                 <p> Boituva  </p>
             </div>
-        </div>
-        <div class="box">
-            <h3 class="">Links</h3>
-            <a href="#">home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Services</a>
-            <a href="#">Depoimentos</a>
-            <a href="#">Galeria</a>
-            <a href="#">Contato</a>
-        </div>
-        <div class="box">
-            <h3 class="">Siga</h3>
-            <a href="https://www.facebook.com/meubalaoboituva"><i class='bx bxl-facebook-square icont-rest'></i>facebook</a>
-            <a href="https://www.instagram.com/meubalaoboituva/"><i class='bx bxl-instagram icont-rest'></i>instagram</a>
         </div>
         <div class="box">
             <h3 class="">Sobre</h3>

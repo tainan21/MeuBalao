@@ -5,10 +5,13 @@
 			<h1 class="heading">Balonismo</h1>
 		</div>
 		<div class="filters">
-			<span class="filters_button" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
-			<span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">publicitário</span>
-			<span class="filters_button" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">Casais</span>
-			<span class="filters_button" v-bind:class="{ active: currentFilter === 'EXP' }" v-on:click="setFilter('EXP')">Grupo</span>
+      <div class="container">
+        <div class="row">
+          <span class="filters_button" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
+          <span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">publicitário</span>
+          <span class="filters_button" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">Casais</span>
+        </div>
+      </div>
 		</div>
 	</div>
 	<transition-group class="projects" name="projects"

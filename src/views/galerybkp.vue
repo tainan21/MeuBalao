@@ -25,7 +25,6 @@
                     </div>
                     </template>
                 </vs-dialog>
-    
 				<div class="gradient-overlay"></div>
 			</div>
 		</div>

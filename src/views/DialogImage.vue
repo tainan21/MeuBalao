@@ -17,7 +17,6 @@
 <script>
 export default {
     data:() => ({
-      active: false,
-      
+        active: false,
     })}
 </script>
