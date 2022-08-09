@@ -2,35 +2,60 @@
   <div>
 
 <!-- home section starts  -->
-
 <section class="home" id="home">
-
-    <div class="content">
-        <h3 data-aos="slide-right"
-        data-aos-easing="ease-in"
-        data-aos-duration="1000"
-        data-aos-delay="300">Melhor Passeio de <span class="text-gradient">Boituva</span></h3>
-        <p data-aos="slide-right"
-        data-aos-easing="ease-in"
-        data-aos-duration="1000"
-        data-aos-delay="300">Venha aproveitar o melhor voo de balão de Boituva! Experimente o maior balão de boituva!!</p>
-        <a href="https://wa.me/5515997150101?text=Ola" class="btn"
-        data-aos="slide-right"
-        data-aos-easing="ease-in"
-        data-aos-duration="1000"
-        data-aos-delay="300">Confira Agora!</a>
         <input type="submit" ref="home"  maxlength="0"  />
-    </div>
+        <Flicking :options="{ circular: true, horizontal: true }" :plugins="plugins">
+        <div class="content banner-rotate">
+              <h3 data-aos="slide-right"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              data-aos-delay="300">Voe com a  <span class="text-gradient">Meu Balão</span></h3>
+              <a href="https://wa.me/5515997150101?text=Ola" class="btn"
+              data-aos="slide-right"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              data-aos-delay="300">Confira Agora!</a>
+        </div>   
+        <div class="content banner-rotate">
+              <h3 data-aos="slide-right"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              data-aos-delay="300">Melhor Voo <span class="text-gradient">Boituva</span></h3>
+              <a href="https://wa.me/5515997150101?text=Ola" class="btn"
+              data-aos="slide-right"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              data-aos-delay="300">Chame!</a>
+        </div>  
+        <div class="content banner-rotate">
+              <h3 data-aos="slide-right"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              data-aos-delay="300">O melhor voo <span class="text-gradient">Boituva</span></h3>
+              <a href="https://wa.me/5515997150101?text=Ola" class="btn"
+              data-aos="slide-right"
+              data-aos-easing="ease-in"
+              data-aos-duration="1000"
+              data-aos-delay="300">Chame!</a>
+        </div>          
+        </Flicking>
+    <Flicking :options="{ circular: true, horizontal: false }">
+      <div class="image image-balon" data-aos="slide-left"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000"
+          data-aos-delay="300">
+          <img src="@/assets/images/home-img.png" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+      </div>
+       <div class="image image-balon"         data-aos="slide-left"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000"
+          data-aos-delay="300">
+          <img src="@/assets/images/home-img-ant.png" style="width: 100%; height: 100%;" alt="">
+      </div>
+    </Flicking>
 
-    <div class="image"         data-aos="slide-left"
-        data-aos-easing="ease-in"
-        data-aos-duration="1000"
-        data-aos-delay="300">
-        <img src="@/assets/images/home-img.png" alt="">
-    </div>
 
 </section>
-
 <!-- home section ends -->
 
 <!-- about section starts  -->
@@ -125,19 +150,21 @@
     <div class="title-container">
         <h1 class="heading"> Nossos Passeios </h1>
     </div>
-  
     <input type="submit" ref="search"  maxlength="0"  />
     <div class="box-container">
-
         <div class="box"
         data-aos="zoom-in"
         data-aos-ease="ease"
         data-aos-duration="1000"
-        data-aos-delay='300'
-        >
-            <img src="@/assets/images/vooemgrupo.jpeg" style="width: 240px; height: 240px;" alt=""></img>
+        data-aos-delay='300'>
+              <div class="box-img">
+               <Flicking :options="{ horizontal: true }" :plugins="plugins">
+                    <img src="@/assets/images/vooemgrupo.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                    <img src="@/assets/images/vooemgrupo.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                </Flicking>
+              </div>
+
             <h3 class="title">Voo em Grupo</h3>
-          <!--  <div class="price">$10<span>/monthly</span></div> -->
             <ul>
                 <li> <i class="fas fa-check"></i> 1000+ voos </li>
                 <li> <i class="fas fa-check"></i> No transaction fees </li>
@@ -146,16 +173,18 @@
             </ul>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
         </div>
-
         <div class="box"
         data-aos="zoom-in"
         data-aos-ease="ease"
         data-aos-duration="1000"
-        data-aos-delay='300'
-        >
-            <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px;" alt="">
+        data-aos-delay='300'>
+            <div class="box-img">
+               <Flicking :options="{ horizontal: true }" :plugins="plugins">
+                  <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                  <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                </Flicking>
+            </div>
             <h3 class="title">Voo publicitário</h3>
-        <!--      <div class="price">$15<span>/monthly</span></div>  -->
             <ul>
                 <li> <i class="fas fa-check"></i> 1000+ voos </li>
                 <li> <i class="fas fa-check"></i> No transaction fees </li>
@@ -164,16 +193,19 @@
             </ul>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
         </div>
-
         <div class="box"
         data-aos="zoom-in"
         data-aos-ease="ease"
         data-aos-duration="1000"
         data-aos-delay='300'
         >
-            <img src="@/assets/images/voocasal.jpeg" style="width: 240px; height: 240px;" alt="">
+            <div class="box-img">
+               <Flicking :options="{ horizontal: true }" :plugins="plugins">
+                <img src="@/assets/images/voocasal.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                <img src="@/assets/images/voocasal.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                </Flicking>
+            </div>
             <h3 class="title">Voo de Casal</h3>
-         <!--    <div class="price">$25<span>/monthly</span></div>  -->
             <ul>
                 <li> <i class="fas fa-check"></i> Totalmente Novo! </li>
                 <li> <i class="fas fa-check"></i> No transaction fees </li>
@@ -186,6 +218,7 @@
     </div>
 
 </section>
+
 
 <!-- pricing section ends -->
 
@@ -217,8 +250,29 @@
     <input type="submit" ref="depoiment"  maxlength="0"  />
 
     <div class="box-container">
-
-        <div class="box"
+        <Flicking :options="{  horizontal: true }">
+          <div class="box box-coments panel"
+            data-aos="zoom-in"
+            data-aos-ease="ease"
+            data-aos-duration="1000"
+            data-aos-delay='300'>
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="@/assets/images/pic1.png" alt="Comentário 1 Boituva - Balonismo">
+                <h3>Suyane Francyne</h3>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                </div>
+                <div class="comment">
+                    Empresa responsável, com equipamentos novos e excelentes, equipe qualificada com um diferencial em acessibilidade e respeito aos clientes.
+                </div>
+            </div>
+        </div>
+        <div class="box box-coments panel"
             data-aos="zoom-in"
             data-aos-ease="ease"
             data-aos-duration="1000"
@@ -240,13 +294,11 @@
                 </div>
             </div>
         </div>
-
-        <div class="box"
+        <div class="box box-coments panel"
             data-aos="zoom-in"
             data-aos-ease="ease"
             data-aos-duration="1000"
-            data-aos-delay='300'
-        >
+            data-aos-delay='300'>
             <i class="fas fa-quote-right"></i>
             <div class="user">
                 <img src="@/assets/images/pic2.png"  alt="Comentário 2 Boituva - balonismo">
@@ -262,31 +314,52 @@
                     Experiência sem igual. Sensacional o passeio e a receptividade de todos. Recomendo. A vista é íncrivel!
                 </div>
             </div>
-        </div>
-
-        <div class="box"
+        </div> 
+        <div class="box box-coments panel"
             data-aos="zoom-in"
             data-aos-ease="ease"
             data-aos-duration="1000"
             data-aos-delay='300'>
             <i class="fas fa-quote-right"></i>
             <div class="user">
-                <img src="@/assets/images/pic3.png" alt="Comentário 3 Boituva - Balonismo">
-                <h3>Nayara Costa</h3>
+                <img src="@/assets/images/pic2.png"  alt="Comentário 2 Boituva - balonismo">
+                <h3>Arthur souza</h3>
                 <div class="stars">
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
                     <i class="bx bxs-star"></i>
-                    <i class="bx bx-star"></i>
+                    <i class="bx bxs-star"></i>
                 </div>
                 <div class="comment">
-                    A paisagem é sensacional! Equipe profissional e bem preparada. Nunca esquecei dessa experiência! :)
+                    Experiência sem igual. Sensacional o passeio e a receptividade de todos. Recomendo. A vista é íncrivel!
                 </div>
             </div>
-        </div>
+        </div>    
+           <div class="box box-coments panel"
+            data-aos="zoom-in"
+            data-aos-ease="ease"
+            data-aos-duration="1000"
+            data-aos-delay='300'>
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="@/assets/images/pic2.png"  alt="Comentário 2 Boituva - balonismo">
+                <h3>Arthur souza</h3>
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                </div>
+                <div class="comment">
+                    Experiência sem igual. Sensacional o passeio e a receptividade de todos. Recomendo. A vista é íncrivel!
+                </div>
+            </div>
+        </div>      
+      </Flicking>
 
-
+       
     </div>
 
 </section>
@@ -299,6 +372,51 @@
 <GalleryFilter /> 
 
 <!-- GalleryFilter section ends -->
+
+
+<div class="footer"
+            data-aos="zoom-in"
+            data-aos-ease="ease"
+            data-aos-duration="1000"
+            data-aos-delay='300'>
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Nosso Contato</h3>
+            <div class="info">
+                <i class="bx bx-phone"></i>
+                <p> (15) 99715-0101 </p>
+            </div>
+            <div class="info">
+                <i class="bx bx-envelope"></i>
+                <p> meubalaobtv@gmail.com </p>
+            </div>
+            <div class="info">
+                <i class="bx bx-map"></i>
+                <p> Boituva  </p>
+            </div>
+        </div>
+        <div class="box">
+            <h3 class="">Links</h3>
+            <a href="#">home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Services</a>
+            <a href="#">Depoimentos</a>
+            <a href="#">Galeria</a>
+            <a href="#">Contato</a>
+        </div>
+        <div class="box">
+            <h3 class="">Siga</h3>
+            <a href="https://www.facebook.com/meubalaoboituva"><i class='bx bxl-facebook-square icont-rest'></i>facebook</a>
+            <a href="https://www.instagram.com/meubalaoboituva/"><i class='bx bxl-instagram icont-rest'></i>instagram</a>
+        </div>
+        <div class="box">
+            <h3 class="">Sobre</h3>
+            <p>Em 2013 Em Uma Viajem A Turquia, Eu Fiz Um Voo De Balão Na Capadócia, Naquela Manhã Uma Semente Estava Plantada Em Meu Coração, Uma Paixão Pelo Balonismo. Anos Depois Eu Tive Oportunidade De Conhecer O Balonismo De Boituva.</p>
+        </div>
+    </div>
+    <h1 class="center text-center" style="text-align: center;"> &copy; copyright @ 2021 by TaiCode </h1>
+</div>
 
 
 <!-- contact section starts  -->
@@ -396,10 +514,13 @@
 <script>
 import GalleryFilter from '@/views/GalleryFilter.vue'
 import {EventBus} from "@/eventbus"
+import { AutoPlay } from "@egjs/flicking-plugins";
+
 
   export default {
     data:() => ({
         options: [],
+        plugins: [new AutoPlay()],
         active: false
     }),
     components: {
@@ -446,7 +567,7 @@ import {EventBus} from "@/eventbus"
 .home{
     background:url(@/assets/images/ceu.jpg) no-repeat;
 //    background-image: url(https://img.freepik.com/fotos-gratis/natureza-anoitecer-nuvem-paisagem-colorida_1203-5705.jpg?w=740&t=st=1659215220~exp=1659215820~hmac=571604d…);
-    min-height: 400px;
+    min-height: 550px;
     background-attachment: fixed;
     background-position: 50%;
     background-repeat: no-repeat;

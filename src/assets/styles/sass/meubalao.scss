@@ -9,9 +9,15 @@
 //flicking
 .flicking-viewport.vertical, .flicking-viewport.vertical > .flicking-camera {
     display: inline-block;
-    height: 300px !important;
+    max-height: 350px !important;
+    display: flex;
 }
 
+.image-balon{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
 
 .banner-rotate{
     width: 100%;
@@ -21,6 +27,14 @@
      right: 35%;
      flex: none !important;
    }
+   
+@media (max-width:600px){
+    .box-coments{
+        width: 100% !important;
+        right: 1%;
+        flex: none !important;
+      }
+}
    .box-img{
      width: 240px;
      height: 240px;

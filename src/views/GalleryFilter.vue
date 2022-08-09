@@ -1,20 +1,10 @@
 <template>
 <div id="app">
-	<div class="title-container"
-          data-aos="zoom-in"
-        data-aos-ease="ease"
-        data-aos-duration="1000"
-        data-aos-delay='300'>
+	<div class="title-container">
 		<div>
-			<h1 class="heading"
-        data-aos="zoom-in"
-        data-aos-ease="ease"
-        data-aos-duration="1200"
-        data-aos-delay='400'
-        >Balonismo</h1>
+			<h1 class="heading">Balonismo</h1>
 		</div>
-		<div class="filters"
->
+		<div class="filters">
 			<span class="filters_button" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
 			<span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">publicitário</span>
 			<span class="filters_button" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">Casais</span>
@@ -26,20 +16,34 @@
         data-aos-ease="ease"
         data-aos-duration="1000"
         data-aos-delay='300' >
-		<div class="project" v-if="currentFilter === project.category || currentFilter === 'ALL'" v-bind:key="project.title" v-for="project in projects">
+		<div class="project" v-if="currentFilter === project.category || currentFilter === 'ALL'" v-bind:key="project.title" v-for="(project, index) in projects">
 			<vs-card type="2">
-    <template #title>
-      <h3>{{project.title}}</h3>
-    </template>
-    <template shadow #img >
-      <div @click="active=!active">
-        <img v-bind:src="project.image">
-        <div class="center">
-          <vs-dialog blur v-model="active">
+        <template #title>
+          <h3>{{project.title}}</h3>
+        </template>
+        <template shadow #img >
+          <div @click="showimg(index)">
+            <img v-bind:src="project.image">
+          </div>
+        </template>
+          <template #text>
+            <p>{{project.desc}}</p>
+        </template>
+        <template #interactions>
+          <vs-button primary shadow icon @click="showimg(index)">
+            <i class='bx bx-low-vision'></i>
+          </vs-button>
+          <vs-button class="btn-chat" shadow primary @click="showimg(index)">
+            <i class='bx bx-info-circle' ></i>
+          </vs-button>
+        </template>
+      </vs-card>
+         <div class="center">
+          <vs-dialog blur v-model="project.show">
             <template #header>
               <h4 class="not-margin"><b>{{project.title}}</b></h4>
             </template>
-            <img v-bind:src="project.image" class="img-fluid" alt="Responsive image" style="width: 100%; height: 400px; background-size: cover; object-fit: cover;"></img>
+            <img v-bind:src="project.image" class="img-fluid" alt="Responsive image" style="width: 100%; height: 400px; background-size: cover; object-fit: cover;">
             <template #footer>
               <div class="footer-dialog">
                   <h2 class="Product_Info-Title"><b>{{project.title}}</b></h2>
@@ -48,30 +52,16 @@
             </template>
           </vs-dialog>
         </div>
-      </div>
-    </template>
-      <template #text>
-        <p>{{project.desc}}</p>
-    </template>
-    <template #interactions>
-      <vs-button primary shadow icon @click="active=!active">
-        <i class='bx bx-low-vision'></i>
-      </vs-button>
-      <vs-button class="btn-chat" shadow primary @click="active=!active">
-        <i class='bx bx-info-circle' ></i>
-      </vs-button>
-    </template>
-  </vs-card>
-    
-		</div>
+		</div> 
+
 	</transition-group>
   
-
 </div>
 
 </template>
 
 <script>
+  import GalleryDialog from '@/views/DialogImage.vue'
   import imagema from "@/assets/images/imagem1.jpg"
   import imagemb from "@/assets/images/imagem2.jpg"
   import imagemc from "@/assets/images/imagem3.jpg"
@@ -92,17 +82,21 @@
   import imagems from "@/assets/images/imagem188.jpg"
   export default {
     data:() => ({
-      currentFilter: 'ALL',
+      currentFilter: 'BAL',
       active: false,
       projects: [
-        {title: "Artwork", image: imagema, category: 'BAL'},
-        {title: "Charcoal", image: imagemb, category: 'BAL'},
+        {title: "Artwork", image: imagema, category: 'BAL', show: false},
+        {title: "Charcoal", image: imagemb, category: 'BAL' , show: false},
+        {title: "Charcoal", image: imagemb, category: 'CLI' , show: false},
       ]
     }),
 	methods: {
 		setFilter: function(filter) {
 			this.currentFilter = filter;
-		}
+		},
+    showimg(index){
+      this.projects[index].show = !this.projects[index].show;
+    }
 	},
   mounted() {
   	this.previews = _.shuffle(this.previews);
