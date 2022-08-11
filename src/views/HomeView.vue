@@ -4,14 +4,15 @@
         <BannerInicial />
         <input type="submit" ref="about"  maxlength="0"  />
         <About />
-        <input type="submit" ref="services"  maxlength="0"  />
+       <input type="submit" ref="services"  maxlength="0"  />
         <NossosPasseios />
         <input type="submit" ref="Contact"  maxlength="0"  />
-        <Services /> 
+     <!--    <Services />  -->
         <input type="submit" ref="Depoiments"  maxlength="0"  />
         <Depoiments />
         <input type="submit" ref="gallery"  maxlength="0"  />
-        <GalleryFilter /> 
+        <GalleryFilter />
+         
         <FooterSection />
 
     </div>

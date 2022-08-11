@@ -19,10 +19,15 @@
 
             <h3 class="title">Voo em Grupo</h3>
             <ul>
-                <li> <i class="fas fa-check"></i> 1000+ voos </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-times"></i> unlimited storage </li>
-                <li> <i class="fas fa-times"></i> +40 de balões  </li>
+                <li> <i class="bx bx-check"></i> <b>Até 24 pessoas no Balão </b></li>
+                <li> <i class="bx bx-time"></i> <b>CHECK-IN 5:00 às 5:30</b></li>
+                <li> <i class="bx bx-time"></i> Voo de 40 min à uma hora </li>
+                <li> <i class="bx bx-check"></i> Desjejum</li>
+                <li> <i class="bx bx-check"></i> Brinde de espumante</li>
+                <li> <i class="bx bx-check"></i> Café da manhã Completo</li>
+                <li> <i class="bx bx-check"></i> Translado de vans entre pontos de encontro</li>
+                <li> <i class="bx bx-check"></i> Fotos e vídeos do Passeio</li>
+                <li> <i class="bx bx-check"></i> Uma linda taça personalizada</li>
             </ul>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
         </div>
@@ -39,13 +44,17 @@
             </div>
             <h3 class="title">Voo publicitário</h3>
             <ul>
-                <li> <i class="fas fa-check"></i> 1000+ voos </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-check"></i> unlimited storage </li>
-                <li> <i class="fas fa-times"></i> +40 de balões  </li>
+                <li> <i class="bx bx-checks"></i> <b>O céu é o limite para sua marca. </b></li>
+                <li> <i class="bx bx-time"></i> <b>CHECK-IN 5:00 às 5:30</b></li>
+                <li> <i class="bx bx-time"></i> Voo de 40 min à uma hora</li>
+                <li> <i class="bx bx-check"></i> Tenha um balão personalizado com sua marca e promova eventos corporativos incluindo voos cativos (voos experimentais onde o balão sobe até +- 20m de altura). </li>
+                <li> <i class="bx bx-check"></i> Desjejum  </li>
+                <li> <i class="bx bx-check"></i>  Fotos e vídeos do Passeio </li>
+                <li> <i class="bx bx-check"></i> Brinde de espumante  </li>
             </ul>
-            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
-        </div>
+            <div class="">
+                        <a href="https://wa.me/5515997150101?text=Ola" class="btn flex center">Confira agora</a></div>
+            </div>  
         <div class="box"
         data-aos="zoom-in"
         data-aos-ease="ease"
@@ -58,12 +67,17 @@
                 <img src="@/assets/images/voocasal.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
                 </Flicking>
             </div>
-            <h3 class="title">Voo de Casal</h3>
-            <ul>
-                <li> <i class="fas fa-check"></i> Totalmente Novo! </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-check"></i> unlimited storage </li>
-                <li> <i class="fas fa-check"></i> 1 balão no céu </li>
+            <h3 class="title">Voo Exclusivo</h3>
+             <ul>
+                <li> <i class="bx bx-check"></i> <b>Até 2 pessoas no Balão + piloto</b></li>
+                <li> <i class="bx bx-time"></i> <b>CHECK-IN 5:00 às 5:30</b></li>
+                <li> <i class="bx bx-time"></i> Voo de 40 min à uma hora </li>
+                <li> <i class="bx bx-check"></i> Desjejum</li>
+                <li> <i class="bx bx-check"></i> Brinde com espumante</li>
+                <li> <i class="bx bx-check"></i> Café da manhã Completo</li>
+                <li> <i class="bx bx-check"></i> Translado de vans entre pontos de encontro</li>
+                <li> <i class="bx bx-check"></i> Fotos e vídeos do Passeio</li>
+                <li> <i class="bx bx-check"></i> Uma linda taça personalizada</li>
             </ul>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
         </div>

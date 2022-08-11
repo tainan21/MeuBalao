@@ -50,7 +50,7 @@
             <template #footer>
               <div class="footer-dialog">
                   <h2 class="Product_Info-Title"><b>{{project.title}}</b></h2>
-                  <h2 class="Product_Info-Description">Informações sobre a imagem</h2>
+
               </div>
             </template>
           </vs-dialog>
@@ -88,9 +88,19 @@
       currentFilter: 'BAL',
       active: false,
       projects: [
-        {title: "Artwork", image: imagema, category: 'BAL', show: false},
-        {title: "Charcoal", image: imagemb, category: 'BAL' , show: false},
-        {title: "Charcoal", image: imagemb, category: 'CLI' , show: false},
+        {title: "", image: imagema, category: 'BAL', show: false},
+        {title: "", image: imagemb, category: 'BAL' , show: false},
+        {title: "", image: imagemc, category: 'CLI' , show: false},
+        {title: "", image: imagemd, category: 'BAL' , show: false},
+        {title: "", image: imageme, category: 'CLI' , show: false},
+        {title: "", image: imagemf, category: 'BAL' , show: false},
+        {title: "", image: imagemg, category: 'CLI' , show: false},
+        {title: "", image: imagemh, category: 'BAL' , show: false},
+        {title: "", image: imagemi, category: 'CLI' , show: false},
+        {title: "", image: imagemj, category: 'BAL' , show: false},
+        {title: "", image: imagemk, category: 'CLI' , show: false},
+        {title: "", image: imagemo, category: 'BAL' , show: false},
+        {title: "", image: imagemp, category: 'CLI' , show: false},
       ]
     }),
 	methods: {
