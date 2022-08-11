@@ -1,11 +1,9 @@
 <template>
 <div>
 <section class="pricing" id="pricing">
-    <input type="submit" ref="passeios"  maxlength="0"  />
     <div class="title-container">
         <h1 class="heading"> Nossos Passeios </h1>
     </div>
-    <input type="submit" ref="search"  maxlength="0"  />
     <div class="box-container">
         <div class="box"
         data-aos="zoom-in"

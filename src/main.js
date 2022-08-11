@@ -12,6 +12,8 @@ import 'aos/dist/aos.css'
 import Flicking from "@egjs/vue-flicking";
 import "@egjs/vue-flicking/dist/flicking.css";
 import { Fade, Parallax, AutoPlay } from "@egjs/flicking-plugins";
+const plugins = [new AutoPlay({ duration: 2000, direction: "NEXT", stopOnHover: false })];
+
 
 Vue.use(Flicking);
 

@@ -6,6 +6,34 @@
     --gradient:linear-gradient(90deg, var(--purple), var(--pink));
 }
 
+.title-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.home{
+background:url(@/assets/images/ceu.jpg) no-repeat;
+//    background-image: url(https://img.freepik.com/fotos-gratis/natureza-anoitecer-nuvem-paisagem-colorida_1203-5705.jpg?w=740&t=st=1659215220~exp=1659215820~hmac=571604d…);
+min-height: 550px;
+background-attachment: fixed;
+background-position: 50%;
+background-repeat: no-repeat;
+width: 100%;
+background-size: cover;
+}
+
+input{
+-webkit-appearance: none;
+opacity: 0;
+}
+
+.icont-rest{
+position: relative;
+bottom: -1.4px;
+}
+
 //flicking
 .flicking-viewport.vertical, .flicking-viewport.vertical > .flicking-camera {
     display: inline-block;
