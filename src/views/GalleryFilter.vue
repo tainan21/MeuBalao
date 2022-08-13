@@ -50,7 +50,6 @@
             <template #footer>
               <div class="footer-dialog">
                   <h2 class="Product_Info-Title"><b>{{project.title}}</b></h2>
-
               </div>
             </template>
           </vs-dialog>
@@ -119,6 +118,7 @@
 
 
 <style lang="scss" scoped>
+
 html,body {
 	margin:0;
 	font-family: 'Dawning of a New Day', cursive;

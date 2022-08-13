@@ -55,7 +55,18 @@ bottom: -1.4px;
      right: 35%;
      flex: none !important;
    }
-   
+
+   @media (min-width:600px){
+    .align-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-align-pedrinha{
+        position: relative;
+        right: -18%;
+    }
+   }
 @media (max-width:600px){
     .box-coments{
         width: 100% !important;

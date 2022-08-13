@@ -6,15 +6,15 @@
         <About />
        <input type="submit" ref="services"  maxlength="0"  />
         <NossosPasseios />
+        <input type="submit" ref="about"  maxlength="0"  />
+        <PVCSection />
         <input type="submit" ref="Contact"  maxlength="0"  />
      <!--    <Services />  -->
         <input type="submit" ref="Depoiments"  maxlength="0"  />
         <Depoiments />
         <input type="submit" ref="gallery"  maxlength="0"  />
         <GalleryFilter />
-         
         <FooterSection />
-
     </div>
 </template>
 
@@ -26,6 +26,7 @@ import Services from '@/components/Services.vue'
 import Depoiments from '@/components/Depoiments.vue'
 import BannerInicial from '@/components/BannerInicial.vue'
 import FooterSection from '@/components/Footer.vue'
+import PVCSection from '@/components/PVCSection.vue'
 import {EventBus} from "@/eventbus"
 import { AutoPlay } from "@egjs/flicking-plugins";
 
@@ -44,6 +45,7 @@ import { AutoPlay } from "@egjs/flicking-plugins";
       'Depoiments': Depoiments,
       'BannerInicial': BannerInicial,
       'FooterSection': FooterSection,
+      'PVCSection': PVCSection,
      },
     methods: {
       setFocus: function(){
