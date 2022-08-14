@@ -13,6 +13,23 @@
     align-items:center;
 }
 
+@media (max-width: 800px){
+    .vs-navbar{
+        min-height: 100px !important;
+        display: flex;
+        align-items: center;
+    }
+    .card-logo-app{
+        position: relative !important;
+    }
+    input {
+        display: none;
+    }
+}
+.footers{
+    background: white;
+
+}
 .home{
 background:url(@/assets/images/ceu.jpg) no-repeat;
 //    background-image: url(https://img.freepik.com/fotos-gratis/natureza-anoitecer-nuvem-paisagem-colorida_1203-5705.jpg?w=740&t=st=1659215220~exp=1659215820~hmac=571604d…);
@@ -25,8 +42,8 @@ background-size: cover;
 }
 
 input{
--webkit-appearance: none;
-opacity: 0;
+    -webkit-appearance: none;
+    opacity: 0;
 }
 
 .icont-rest{
@@ -107,7 +124,6 @@ bottom: -1.4px;
     padding:1rem;
 	cursor:pointer;
 	transition: all 0.35s;
-
 }
 .filters_button{
     background:var(--gradient);

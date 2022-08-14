@@ -10,13 +10,11 @@
         data-aos-ease="ease"
         data-aos-duration="1000"
         data-aos-delay='300'>
-              <div class="box-img">
-               <Flicking :options="{ horizontal: true }" :plugins="plugins1">
-                    <img src="@/assets/images/vooemgrupo.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                    <img src="@/assets/images/vooemgrupo.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                </Flicking>
-              </div>
-
+            <div class="box-img">
+            <Flicking :options="{ horizontal: true }" :plugins="plugins1">
+                <img src="@/assets/images/vooemgrupo.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+            </Flicking>
+            </div>
             <h3 class="title">Voo em Grupo</h3>
             <ul>
                 <li> <i class="bx bx-check"></i> <b>Até 24 pessoas no Balão </b></li>
@@ -39,7 +37,12 @@
             <div class="box-img">
                <Flicking :options="{ horizontal: true }" :plugins="plugins2">
                   <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                  <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                  <img src="@/assets/images/voopublicitario2.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                  <img src="@/assets/images/voopublicitario3.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                  <img src="@/assets/images/voopublicitario4.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                  <img src="@/assets/images/voopublicitario5.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                  <img src="@/assets/images/voopublicitario6.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                  <img src="@/assets/images/voopublicitario7.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
                 </Flicking>
             </div>
             <h3 class="title">Voo publicitário</h3>
@@ -64,7 +67,13 @@
             <div class="box-img">
                <Flicking :options="{ horizontal: true }" :plugins="plugins3">
                 <img src="@/assets/images/voocasal.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                <img src="@/assets/images/voocasal.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                <img src="@/assets/images/voocasal2.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                <img src="@/assets/images/voocasal3.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                <img src="@/assets/images/voocasal4.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                <img src="@/assets/images/voocasal5.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                <img src="@/assets/images/voocasal6.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                <img src="@/assets/images/voocasal7.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
+                <img src="@/assets/images/voocasal8.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
                 </Flicking>
             </div>
             <h3 class="title">Voo Exclusivo</h3>
@@ -91,9 +100,9 @@ import { AutoPlay } from "@egjs/flicking-plugins";
 
 export default {
   data: () => { return {
-      plugins1: [new AutoPlay({ duration: 6000, stopOnHover: false })],
-      plugins2: [new AutoPlay({ duration: 6000, stopOnHover: false })],
-      plugins3: [new AutoPlay({ duration: 6000, stopOnHover: false })],
+      plugins1: [new AutoPlay({ duration: 8000, stopOnHover: false })],
+      plugins2: [new AutoPlay({ duration: 8000, stopOnHover: false })],
+      plugins3: [new AutoPlay({ duration: 8000, stopOnHover: false })],
     }
   }
 }

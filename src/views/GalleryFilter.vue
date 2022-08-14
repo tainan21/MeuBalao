@@ -69,19 +69,19 @@
   import imagemc from "@/assets/images/imagem3.jpg"
   import imagemd from "@/assets/images/imagem4.jpg"
   import imageme from "@/assets/images/imagem5.jpg"
-  import imagemf from "@/assets/images/imagem66.jpg"
-  import imagemg from "@/assets/images/imagem77.jpg"
-  import imagemh from "@/assets/images/imagem88.jpg"
-  import imagemi from "@/assets/images/imagem99.jpg"
-  import imagemj from "@/assets/images/imagem100.jpg"
-  import imagemk from "@/assets/images/imagem111.jpg"
-  import imagemm from "@/assets/images/imagem122.jpg"
-  import imagemn from "@/assets/images/imagem133.jpg"
-  import imagemo from "@/assets/images/imagem144.jpg"
-  import imagemp from "@/assets/images/imagem155.jpg"
-  import imagemq from "@/assets/images/imagem166.jpg"
-  import imagemr from "@/assets/images/imagem177.jpg"
-  import imagems from "@/assets/images/imagem188.jpg"
+  import imagemf from "@/assets/images/imagem6.jpg"
+  import imagemg from "@/assets/images/imagem7.jpg"
+  import imagemh from "@/assets/images/imagem8.jpg"
+  import imagemi from "@/assets/images/imagem9.jpg"
+ /* import imagemj from "@/assets/images/imagem10.jpg"
+  import imagemk from "@/assets/images/imagem11.jpg"
+  import imagemm from "@/assets/images/imagem12.jpg"
+  import imagemn from "@/assets/images/imagem13.jpg"
+  import imagemo from "@/assets/images/imagem14.jpg"
+  import imagemp from "@/assets/images/imagem15.jpg"
+  import imagemq from "@/assets/images/imagem16.jpg"
+  import imagemr from "@/assets/images/imagem17.jpg"
+  import imagems from "@/assets/images/imagem18.jpg" */
   export default {
     data:() => ({
       currentFilter: 'BAL',
@@ -95,11 +95,7 @@
         {title: "", image: imagemf, category: 'BAL' , show: false},
         {title: "", image: imagemg, category: 'CLI' , show: false},
         {title: "", image: imagemh, category: 'BAL' , show: false},
-        {title: "", image: imagemi, category: 'CLI' , show: false},
-        {title: "", image: imagemj, category: 'BAL' , show: false},
-        {title: "", image: imagemk, category: 'CLI' , show: false},
-        {title: "", image: imagemo, category: 'BAL' , show: false},
-        {title: "", image: imagemp, category: 'CLI' , show: false},
+        {title: "", image: imagemi, category: 'BAL' , show: false},
       ]
     }),
 	methods: {

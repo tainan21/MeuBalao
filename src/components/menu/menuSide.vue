@@ -5,8 +5,7 @@
         data-aos="zoom-in"
         data-aos-ease="ease"
         data-aos-duration="1500"
-        data-aos-delay='400'
-        >
+        data-aos-delay='400'>
           <template #left>
               <div class="card-logo">
                 <div class="image">
@@ -23,7 +22,7 @@
               <vs-navbar-item :active="active == 'galery'" id="galery" @click="setFocusGallery()">Galeria</vs-navbar-item>
               <vs-navbar-item :active="active == 'license'" id="license" @click="setFocusContact()">Contato</vs-navbar-item>
               <vs-navbar-item href="https://www.instagram.com/meubalaoboituva/"><i  href="https://www.instagram.com/meubalaoboituva/" class='bx bxl-instagram'></i></vs-navbar-item>
-              <vs-navbar-item><vs-button  href="https://www.facebook.com/meubalaoboituva" flat icon><i class='bx bxl-facebook'></i></vs-button></vs-navbar-item>
+              <vs-navbar-item href="https://www.facebook.com/meubalaoboituva" flat icon><i class='bx bxl-facebook'></i></vs-navbar-item>
               <vs-navbar-item href="https://wa.me/5515997150101?text=Ola" ><i class='bx bxl-whatsapp'></i></vs-navbar-item>
             </div>
           </template>
@@ -32,24 +31,19 @@
       <div class="topbarshowphone">
         <vs-navbar shadow square center-collapsed v-model="active">
           <template #left>
-            <vs-button @click="activeSidebar = !activeSidebar" flat icon>
-              <i class='bx bx-menu'></i>
-            </vs-button>
+            <vs-button @click="activeSidebar = !activeSidebar" >
+              <i class='bx bx-menu-alt-left'></i>
+            </vs-button> 
           </template>
-          <template>
               <div class="card-logo-app">
                 <img src="@/assets/images/logo-trans.png" class="logoimgapp" alt="meubalao">
               </div>
-          </template>
           <template #right>
             <vs-button  href="https://www.instagram.com/meubalaoboituva/"  flat icon>
               <i class='bx bxl-instagram'></i>
             </vs-button>
             <vs-button  href="https://www.facebook.com/meubalaoboituva" flat icon>
               <i class='bx bxl-facebook'></i>
-            </vs-button>
-            <vs-button  href="https://wa.me/5515997150101?text=Ola"  flat icon>
-              <i class='bx bxl-whatsapp'></i>
             </vs-button>
           </template>
         </vs-navbar>
@@ -68,7 +62,7 @@
         <div @click="setFocusServices()">
           <vs-sidebar-item id="services"  >
             <template #icon ><i class='bx bxs-music'></i></template>Serviços
-          </vs-sidebar-item>
+</vs-sidebar-item>
         </div>
         <div @click="setFocusDepoiment()">
           <vs-sidebar-item id="depoiment">

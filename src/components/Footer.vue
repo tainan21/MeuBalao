@@ -6,9 +6,7 @@
                 <a href="https://wa.me/5515997150101?text=Ola" class="btn" style="padding: 0.8rem 1rem !important; margin: 5px 5px; display: flex; align-items: center; justify-content: center;"><i class=" bx bxl-instagram icont-rest" ></i></a>
                 <a href="https://wa.me/5515997150101?text=Ola" class="btn" style="padding: 0.8rem 1rem !important; margin: 5px 5px; display: flex; align-items: center; justify-content: center;"><i class=" bx bxl-facebook icont-rest" ></i></a>
             </div>
-            <div class="footers-icons">
-                
-            </div>
+            <div class="footers-copryght"> Copyright © 2022 Seusite. All rights reserved. </div>
         </div>
     <!--    <div class="footer"
                     data-aos="zoom-in"
@@ -39,6 +37,10 @@
             </div>
             <h1 class="center text-center" style="text-align: center;"> &copy; copyright @ 2021 by TaiCode </h1>
         </div>-->
+            <a href="https://wa.me/5515997150101?text=Ola" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+            z-index:1000;" target="_blank">
+                <i style="margin-top:16px" class="bx bxl-whatsapp"></i>
+            </a>
     </div>
 </template>
 
@@ -50,7 +52,7 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            height: 300px;
+            height: 100px;
             &-circle{
                 display: flex;
             }
@@ -60,15 +62,14 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            height: 300px;
         }
         &-copryght{
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 20px;
-            background-color: red;
+            height: 30px;
+            background-color: #814096;
         }
     }
 </style>

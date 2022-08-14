@@ -1,14 +1,8 @@
 <template>
   <div>
-    <div class="barshow">
       <MenuVue />
       <router-view/>
     </div>
-    <div class="topbarshowphone">
-      <MenuVue />
-      <router-view/>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -20,18 +14,5 @@ import MenuVue from '@/components/menu/menuSide.vue'
     },
   }
  </script>
- <style>
-@media (max-width: 599px)
-{
-  .barshow{
-    display: none;
-   }
-}
-@media (min-width: 600px)
-{
-  .topbarshowphone{
-    display: none;
-   }
-}
-</style>
+
 
