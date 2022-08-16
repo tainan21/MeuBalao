@@ -89,13 +89,13 @@
       projects: [
         {title: "", image: imagema, category: 'BAL', show: false},
         {title: "", image: imagemb, category: 'BAL' , show: false},
-        {title: "", image: imagemc, category: 'CLI' , show: false},
+        {title: "", image: imagemc, category: 'BAL' , show: false},
         {title: "", image: imagemd, category: 'BAL' , show: false},
-        {title: "", image: imageme, category: 'CLI' , show: false},
+        {title: "", image: imageme, category: 'BAL' , show: false},
         {title: "", image: imagemf, category: 'BAL' , show: false},
-        {title: "", image: imagemg, category: 'CLI' , show: false},
+        {title: "", image: imagemg, category: 'BAL' , show: false},
         {title: "", image: imagemh, category: 'BAL' , show: false},
-        {title: "", image: imagemi, category: 'BAL' , show: false},
+        {title: "", image: imagemi, category: 'CLI' , show: false},
       ]
     }),
 	methods: {

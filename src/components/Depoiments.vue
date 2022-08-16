@@ -27,10 +27,53 @@
                         <i class="bx bxs-star"></i>
                     </div>
                     <div class="comment">
-                        Empresa responsável, com equipamentos novos e excelentes, equipe qualificada com um diferencial em acessibilidade e respeito aos clientes.
+                        Uma das experiência mais fantásticas e inesquecíveis da minha vida,
+                        pra quem ainda não foi, acredito que não ira se arrepender.
                     </div>
                 </div>
             </div>
+            <div class="box box-coments panel"
+                data-aos="zoom-in"
+                data-aos-ease="ease"
+                data-aos-duration="1000"
+                data-aos-delay='300'>
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="@/assets/images/pic4.jpg"  alt="Comentário 2 Boituva - balonismo">
+                    <h3>Tiago Augusto</h3>
+                    <div class="stars">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                    </div>
+                    <div class="comment">
+                        Passeio excelente, desde o começo até o final, fiquei muito satisfeito com tudo, estão todos de parabéns!!
+                    </div>
+                </div>
+            </div>
+            <div class="box box-coments panel"
+                data-aos="zoom-in"
+                data-aos-ease="ease"
+                data-aos-duration="1000"
+                data-aos-delay='300'>
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="@/assets/images/pic2.png"  alt="Comentário 2 Boituva - balonismo">
+                    <h3>Arthur souza</h3>
+                    <div class="stars">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                    </div>
+                    <div class="comment">
+                        Experiência sem igual. Sensacional o passeio e a receptividade de todos. Recomendo. A vista é íncrivel!
+                    </div>
+                </div>
+            </div>     
             <div class="box box-coments panel"
                 data-aos="zoom-in"
                 data-aos-ease="ease"
@@ -39,8 +82,8 @@
                 >
                 <i class="fas fa-quote-right"></i>
                 <div class="user">
-                    <img src="@/assets/images/pic1.png" alt="Comentário 1 Boituva - Balonismo">
-                    <h3>Suyane Francyne</h3>
+                    <img src="@/assets/images/pic3.png" alt="Comentário 1 Boituva - Balonismo">
+                    <h3>Nathalia Ayumi</h3>
                     <div class="stars">
                         <i class="bx bxs-star"></i>
                         <i class="bx bxs-star"></i>
@@ -60,8 +103,8 @@
                 data-aos-delay='300'>
                 <i class="fas fa-quote-right"></i>
                 <div class="user">
-                    <img src="@/assets/images/pic2.png"  alt="Comentário 2 Boituva - balonismo">
-                    <h3>Arthur souza</h3>
+                    <img src="@/assets/images/pic5.jpg"  alt="Comentário 2 Boituva - balonismo">
+                    <h3>Maísa Silva </h3>
                     <div class="stars">
                         <i class="bx bxs-star"></i>
                         <i class="bx bxs-star"></i>
@@ -70,59 +113,14 @@
                         <i class="bx bxs-star"></i>
                     </div>
                     <div class="comment">
-                        Experiência sem igual. Sensacional o passeio e a receptividade de todos. Recomendo. A vista é íncrivel!
-                    </div>
-                </div>
-            </div> 
-            <div class="box box-coments panel"
-                data-aos="zoom-in"
-                data-aos-ease="ease"
-                data-aos-duration="1000"
-                data-aos-delay='300'>
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="@/assets/images/pic2.png"  alt="Comentário 2 Boituva - balonismo">
-                    <h3>Arthur souza</h3>
-                    <div class="stars">
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
-                    </div>
-                    <div class="comment">
-                        Experiência sem igual. Sensacional o passeio e a receptividade de todos. Recomendo. A vista é íncrivel!
-                    </div>
-                </div>
-            </div>    
-            <div class="box box-coments panel"
-                data-aos="zoom-in"
-                data-aos-ease="ease"
-                data-aos-duration="1000"
-                data-aos-delay='300'>
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="@/assets/images/pic2.png"  alt="Comentário 2 Boituva - balonismo">
-                    <h3>Arthur souza</h3>
-                    <div class="stars">
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
-                    </div>
-                    <div class="comment">
-                        Experiência sem igual. Sensacional o passeio e a receptividade de todos. Recomendo. A vista é íncrivel!
+                        Não imaginava que gostaria tanto de passear de balão, é tudo muito incrível
+                        a vista, a sensação de estar voando, maravilhoso!!
                     </div>
                 </div>
             </div>      
-        </Flicking>
-
-        
+        </Flicking>        
         </div>
-
     </section>
-
 </div>
 </template>
 <script>

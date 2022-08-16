@@ -11,11 +11,9 @@
         data-aos-duration="1000"
         data-aos-delay='300'>
             <div class="box-img">
-            <Flicking :options="{ horizontal: true }" :plugins="plugins1">
                 <img src="@/assets/images/vooemgrupo.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-            </Flicking>
             </div>
-            <h3 class="title">Voo em Grupo</h3>
+            <h3 class="title">Voo Cooletivo</h3>
             <ul>
                 <li> <i class="bx bx-check"></i> <b>Até 24 pessoas no Balão </b></li>
                 <li> <i class="bx bx-time"></i> <b>CHECK-IN 5:00 às 5:30</b></li>
@@ -35,25 +33,13 @@
         data-aos-duration="1000"
         data-aos-delay='300'>
             <div class="box-img">
-               <Flicking :options="{ horizontal: true }" :plugins="plugins2">
-                  <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                  <img src="@/assets/images/voopublicitario2.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                  <img src="@/assets/images/voopublicitario3.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                  <img src="@/assets/images/voopublicitario4.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                  <img src="@/assets/images/voopublicitario5.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                  <img src="@/assets/images/voopublicitario6.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                  <img src="@/assets/images/voopublicitario7.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                </Flicking>
+                  <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">">
             </div>
             <h3 class="title">Voo publicitário</h3>
             <ul>
                 <li> <i class="bx bx-checks"></i> <b>O céu é o limite para sua marca. </b></li>
                 <li> <i class="bx bx-time"></i> <b>CHECK-IN 5:00 às 5:30</b></li>
-                <li> <i class="bx bx-time"></i> Voo de 40 min à uma hora</li>
-                <li> <i class="bx bx-check"></i> Tenha um balão personalizado com sua marca e promova eventos corporativos incluindo voos cativos (voos experimentais onde o balão sobe até +- 20m de altura). </li>
-                <li> <i class="bx bx-check"></i> Desjejum  </li>
-                <li> <i class="bx bx-check"></i>  Fotos e vídeos do Passeio </li>
-                <li> <i class="bx bx-check"></i> Brinde de espumante  </li>
+                <li> <i class="bx bx-check"></i> Tenha um balão personalizado com sua marca e promova eventos corporativos incluindo voos cativos (voos experimentais onde o balão sobe até +- 30m de altura). </li>
             </ul>
             <div class="">
                         <a href="https://wa.me/5515997150101?text=Ola" class="btn flex center">Confira agora</a></div>
@@ -65,20 +51,11 @@
         data-aos-delay='300'
         >
             <div class="box-img">
-               <Flicking :options="{ horizontal: true }" :plugins="plugins3">
-                <img src="@/assets/images/voocasal.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                <img src="@/assets/images/voocasal2.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                <img src="@/assets/images/voocasal3.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                <img src="@/assets/images/voocasal4.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                <img src="@/assets/images/voocasal5.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                <img src="@/assets/images/voocasal6.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                <img src="@/assets/images/voocasal7.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                <img src="@/assets/images/voocasal8.jpg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                </Flicking>
+                    <img src="@/assets/images/voocasal.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
             </div>
             <h3 class="title">Voo Exclusivo</h3>
              <ul>
-                <li> <i class="bx bx-check"></i> <b>Até 2 pessoas no Balão + piloto</b></li>
+                <li> <i class="bx bx-check"></i> <b>Exclusivo para Casal ou Família</b></li>
                 <li> <i class="bx bx-time"></i> <b>CHECK-IN 5:00 às 5:30</b></li>
                 <li> <i class="bx bx-time"></i> Voo de 40 min à uma hora </li>
                 <li> <i class="bx bx-check"></i> Desjejum</li>
@@ -88,7 +65,7 @@
                 <li> <i class="bx bx-check"></i> Fotos e vídeos do Passeio</li>
                 <li> <i class="bx bx-check"></i> Uma linda taça personalizada</li>
             </ul>
-            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn " style="margin: 0;">Confira agora</a>
         </div>
     </div>
     </section>
@@ -107,3 +84,5 @@ export default {
   }
 }
 </script>
+
+
