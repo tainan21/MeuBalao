@@ -58,13 +58,13 @@ import { AutoPlay } from "@egjs/flicking-plugins";
         this.$refs.services.focus();
       },
       setFocusDepoiment: function(){
-        this.$refs.depoiment.focus();
+        this.$refs.Depoiments.focus();
       },
       setFocusGallery: function(){
         this.$refs.gallery.focus();
       },
       setFocusContact: function(){
-        this.$refs.contact.focus();
+        this.$refs.Contact.focus();
       },
     },
     created(){

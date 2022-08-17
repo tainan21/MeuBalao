@@ -9,7 +9,7 @@
         <input type="submit" ref="depoiment"  maxlength="0"  />
 
         <div class="box-container">
-            <Flicking :options="{  horizontal: true }">
+            <Flicking :options="{  circular: true, moveType: 'freeScroll'}" :plugins="plugins">
             <div class="box box-coments panel"
                 data-aos="zoom-in"
                 data-aos-ease="ease"
@@ -124,4 +124,19 @@
 </div>
 </template>
 <script>
+import { AutoPlay } from "@egjs/flicking-plugins";
+
+
+export default {
+  data: () => { return {
+      plugins: [new AutoPlay({ duration: 1000, stopOnHover: false })],
+      plugins2: [new AutoPlay({ duration: 8000, stopOnHover: false })],
+      plugins3: [new AutoPlay({ duration: 8000, stopOnHover: false })],
+    }
+  }
+}
+</script>
+
+
+
 </script>

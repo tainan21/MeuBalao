@@ -13,7 +13,7 @@
             <div class="box-img">
                 <img src="@/assets/images/vooemgrupo.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
             </div>
-            <h3 class="title">Voo Cooletivo</h3>
+            <h3 class="title">Voo Coletivo</h3>
             <ul>
                 <li> <i class="bx bx-check"></i> <b>Até 24 pessoas no Balão </b></li>
                 <li> <i class="bx bx-time"></i> <b>CHECK-IN 5:00 às 5:30</b></li>
@@ -38,7 +38,6 @@
             <h3 class="title">Voo publicitário</h3>
             <ul>
                 <li> <i class="bx bx-checks"></i> <b>O céu é o limite para sua marca. </b></li>
-                <li> <i class="bx bx-time"></i> <b>CHECK-IN 5:00 às 5:30</b></li>
                 <li> <i class="bx bx-check"></i> Tenha um balão personalizado com sua marca e promova eventos corporativos incluindo voos cativos (voos experimentais onde o balão sobe até +- 30m de altura). </li>
             </ul>
             <div class="">

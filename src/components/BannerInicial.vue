@@ -1,12 +1,12 @@
 <template>
     <div>
         <section class="home" id="home">
-            <Flicking :options="{ circular: true, horizontal: true }" :plugins="plugins">
+            <Flicking :options="{  circular: true}" :plugins="plugins">
                 <div class="content banner-rotate">
                     <h3 data-aos="zoom-in"
                     data-aos-easing="ease-in"
                     data-aos-duration="1000"
-                    data-aos-delay="300">Voe com a  <span class="text-gradient">Meu Balão</span></h3>
+                    data-aos-delay="300">Voe com a  <span class="text-gradient"><p></p>Meu Balão</span></h3>
                     <a href="https://wa.me/5515997150101?text=Ola" class="btn"
                     data-aos="zoom-in"
                     data-aos-easing="ease-in"
@@ -48,3 +48,16 @@
         </section>
     </div>
 </template>
+<script>
+import { AutoPlay } from "@egjs/flicking-plugins";
+
+
+export default {
+  data: () => { return {
+      plugins: [new AutoPlay({ duration: 6000, stopOnHover: false })],
+    }
+  }
+}
+</script>
+
+

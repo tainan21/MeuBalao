@@ -15,7 +15,7 @@
                 </div>            
             </div>
             <div class="image">
-                <img src="@/assets/images/pcd.png" class="img-align-pedrinha" alt="" style="width: 400px;">
+                <img src="@/assets/images/pcd.png" class="img-align-pedrinha" alt="" style="width: 360px;">
             </div>
         </div>
 

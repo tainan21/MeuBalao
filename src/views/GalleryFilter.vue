@@ -1,5 +1,6 @@
 <template>
-<div id="app">
+<div >
+  <section>
 	<div class="title-container">
 		<div>
 			<h1 class="heading">Balonismo</h1>
@@ -57,7 +58,7 @@
 		</div> 
 
 	</transition-group>
-  
+  </section>
 </div>
 
 </template>

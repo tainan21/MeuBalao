@@ -18,9 +18,9 @@
               <vs-navbar-item :active="active == 'guide'" item:id="guide" @click="setFocus()">Home</vs-navbar-item>
               <vs-navbar-item :active="active == 'docs'" id="docs" @click="setFocusAbout()">Sobre</vs-navbar-item>
               <vs-navbar-item :active="active == 'Services'" id="Services" @click="setFocusServices()">Serviços</vs-navbar-item>
+              <vs-navbar-item :active="active == 'license'" id="license" @click="setFocusContact()">Adaptados</vs-navbar-item>
               <vs-navbar-item :active="active == 'Depoiment'" id="Depoiment" @click="setFocusDepoiment()">Depoimentos</vs-navbar-item>
               <vs-navbar-item :active="active == 'galery'" id="galery" @click="setFocusGallery()">Galeria</vs-navbar-item>
-              <vs-navbar-item :active="active == 'license'" id="license" @click="setFocusContact()">Contato</vs-navbar-item>
               <vs-navbar-item href="https://www.instagram.com/meubalaoboituva/"><i  href="https://www.instagram.com/meubalaoboituva/" class='bx bxl-instagram'></i></vs-navbar-item>
               <vs-navbar-item href="https://www.facebook.com/meubalaoboituva" flat icon><i class='bx bxl-facebook'></i></vs-navbar-item>
               <vs-navbar-item href="https://wa.me/5515997150101?text=Ola" ><i class='bx bxl-whatsapp'></i></vs-navbar-item>
@@ -29,57 +29,51 @@
         </vs-navbar>
       </div>
       <div class="topbarshowphone">
-        <vs-navbar shadow square center-collapsed v-model="active">
-          <template #left>
-            <vs-button @click="activeSidebar = !activeSidebar" >
+        <div class="salvo" >
+          <div>
+             <vs-button @click="activeSidebar = !activeSidebar" >
               <i class='bx bx-menu-alt-left'></i>
             </vs-button> 
-          </template>
-              <div class="card-logo-app">
+          </div>
+          <div >
+             <div class="balon-img">
                 <img src="@/assets/images/logo-trans.png" class="logoimgapp" alt="meubalao">
               </div>
-          <template #right>
-            <vs-button  href="https://www.instagram.com/meubalaoboituva/"  flat icon>
-              <i class='bx bxl-instagram'></i>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: center;">
+             <vs-button  href="https://www.instagram.com/meubalaoboituva/"  flat icon>
+              <i class='bx bxl-instagram'  style="font-size: 18px !important;"></i>
             </vs-button>
             <vs-button  href="https://www.facebook.com/meubalaoboituva" flat icon>
-              <i class='bx bxl-facebook'></i>
+              <i class='bx bxl-facebook' style="font-size: 18px !important;"></i>
             </vs-button>
-          </template>
-        </vs-navbar>
+          </div>
+        </div>
       <vs-sidebar absolute v-model="active" :open.sync="activeSidebar">
         <template #logo><!-- ...img logo --></template>
-        <div @click="setFocus()">
-          <vs-sidebar-item id="home" >
+        <div @click="setFocus()" >
+          <vs-sidebar-item id="home">
             <template #icon> <i class='bx bx-home'></i></template>Home
           </vs-sidebar-item>
         </div>
-        <div  @click="setFocusAbout()">
-          <vs-sidebar-item id="market">
-            <template #icon ><i class='bx bx-grid-alt'></i></template>Sobre
+        <div id="market" @click="setFocusAbout()" >
+           <vs-sidebar-item  @click="setFocusAbout()">
+            <template #icon  ><i class='bx bx-grid-alt' ></i></template>Sobre
           </vs-sidebar-item>
         </div>
-        <div @click="setFocusServices()">
-          <vs-sidebar-item id="services"  >
-            <template #icon ><i class='bx bxs-music'></i></template>Serviços
-</vs-sidebar-item>
-        </div>
-        <div @click="setFocusDepoiment()">
+        <vs-sidebar-item id="services"  @click="setFocusServices()" >
+            <template #icon ><i class='bx bxs-spreadsheet'></i></template>Serviços
+        </vs-sidebar-item>
+          <vs-sidebar-item id="contact"  >
+            <template #icon ><i class='bx bx-handicap'></i></template>Adaptados
+          </vs-sidebar-item>
           <vs-sidebar-item id="depoiment">
-            <template #icon   ><i class='bx bxs-music'></i></template>Depoimentos
+            <template #icon   @click="setFocusDepoiment()" ><i class='bx bxs-message-dots'></i></template>Depoimentos
           </vs-sidebar-item>
-        </div>
-        <div @click="setFocusGallery()">
           <vs-sidebar-item id="galery" >
-            <template #icon><i class='bx bxs-music'></i></template>Galeria
+            <template #icon><i class='bx bxs-image'></i></template>Galeria
           </vs-sidebar-item>
-        </div>
-        <div @click="setFocusContact()">
-          <vs-sidebar-item id="contact" >
-            <template #icon ><i class='bx bxs-music'></i></template>Contato
-          </vs-sidebar-item>
-        </div>
-      </vs-sidebar>
+          </vs-sidebar>
       </div>
     </div>
   </template>
@@ -115,6 +109,22 @@ import {EventBus} from "@/eventbus"
 
         
  <style>
+ .salvo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 18vh;
+    background: white;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+ }
+ .balon-img{
+    width: 100px;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 .card-logo-app{
   display: flex;
   align-items: center;
@@ -122,16 +132,14 @@ import {EventBus} from "@/eventbus"
   position: absolute;
   left: 32%; top: 0px; bottom: -10px;
   background: white;
-  width: 100px;
-  height: 60px;
   color: white;
   border-bottom-right-radius: 110%;
   border-bottom-left-radius: 110%;
 }
 .logoimgapp{
   position: relative;
-  width: 45px !important;
-  height: 45px !important; 
+  width: 75px !important;
+  height: 75px !important; 
 }
 @media (max-width: 599px)
 {
