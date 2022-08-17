@@ -147,7 +147,7 @@ import {EventBus} from "@/eventbus"
       display: none;
     }
    .home-mobile{
-      background:url(@/assets/images/ceu-mobile.jpg) no-repeat;
+      background:url(@/assets/images/ceu.jpg) no-repeat;
       min-height: 550px;
       background-attachment: fixed;
       background-position: 50%;
