@@ -138,8 +138,8 @@ import {EventBus} from "@/eventbus"
 }
 .logoimgapp{
   position: relative;
-  width: 165px !important;
-  height: 165px !important; 
+  width: 140px !important;
+  height: 140px !important; 
 }
 @media (max-width: 599px)
 {
