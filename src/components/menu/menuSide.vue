@@ -114,7 +114,7 @@ import {EventBus} from "@/eventbus"
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 18vh;
+    height: 22vh;
     background: white;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
  }
@@ -138,11 +138,27 @@ import {EventBus} from "@/eventbus"
 }
 .logoimgapp{
   position: relative;
-  width: 75px !important;
-  height: 75px !important; 
+  width: 95px !important;
+  height: 95px !important; 
 }
 @media (max-width: 599px)
 {
+   .mobile-none{
+      display: none;
+    }
+   .home-mobile{
+      background:url(@/assets/images/ceu-mobile.jpg) no-repeat;
+      min-height: 550px;
+      background-attachment: fixed;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      width: 100%;
+      background-size: cover;
+    }
+    .mobile-white{
+      color: white !important;
+    }
+
   .barshow{
     display: none;
     margin: 0 !important;
@@ -156,6 +172,9 @@ import {EventBus} from "@/eventbus"
   .topbarshowphone{
     display: none;
    }
+    
+
+.home{background:url(@/assets/images/ceu.jpg) no-repeat;}
    .vs-navbar-content{
       position: fixed !important;
     }
