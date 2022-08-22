@@ -1,8 +1,9 @@
 <template>
     <div>
+      
         <input type="submit" ref="home"  maxlength="0"  />
         <BannerInicial />
-        <button @click="scrollToElement">scroll to last</button>
+        <button  @click="test_click">scroll to last</button>
 
         <input type="submit" ref="about"  maxlength="0"  />
         <About />
@@ -11,12 +12,12 @@
         <input type="submit" ref="Contact"  maxlength="0"  />
         <PVCSection />
      <!--    <Services />  -->
-        <input type="submit" ref="Depoiments"  maxlength="0"  />
+        <input type="submit" ref="teste"  maxlength="0"  />
         <Depoiments />
         <p v-for="n of 1" :key="n" :ref="n === 1 ? 'last' : undefined" style="color: transparent; margin: 0;">{{ n }}</p>
         <input type="submit" ref="gallery"  maxlength="0"  />
         <GalleryFilter />
-        <FooterSection />
+        <FooterSection  />
     </div>
 </template>
 
@@ -50,6 +51,13 @@ import { AutoPlay } from "@egjs/flicking-plugins";
       'PVCSection': PVCSection,
      },
     methods: {
+      test_click(){
+      const el = this.$refs.teste
+       if (el) {       
+        el.scrollIntoView({ behavior: "smooth" });
+      }      
+    },
+
       setFocus: function(){
         this.$refs.home.focus();
       },
@@ -72,7 +80,9 @@ import { AutoPlay } from "@egjs/flicking-plugins";
         this.$refs.Depoiments.focus();
       },
       setFocusGallery: function(){
-        this.$refs.gallery.focus();
+        //this.$refs.gallery.focus();
+       this.test_click()
+      
       },
       setFocusContact: function(){
         this.$refs.Contact.focus();
