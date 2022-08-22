@@ -9,8 +9,9 @@
       <div class="container">
         <div class="row">
           <span class="filters_button" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
-          <span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">publicitário</span>
+          <span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">Balonismo</span>
           <span class="filters_button" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">Casais</span>
+          <span class="filters_button" v-bind:class="{ active: currentFilter === 'PUB' }" v-on:click="setFilter('PUB')">Publicitário</span>
         </div>
       </div>
 		</div>
@@ -20,7 +21,7 @@
         data-aos-ease="ease"
         data-aos-duration="1000"
         data-aos-delay='300' >
-		<div class="project" v-if="currentFilter === project.category || currentFilter === 'ALL'" v-bind:key="project.title" v-for="(project, index) in projects">
+		<div class="project" v-if="currentFilter === project.category || currentFilter === 'ALL'" v-bind:key="project.title" v-for="(project, index) in projects" :key="index">
 			<vs-card type="2">
         <template #title>
           <h3>{{project.title}}</h3>
@@ -64,7 +65,7 @@
 </template>
 
 <script>
-  import GalleryDialog from '@/views/DialogImage.vue'
+
   import imagema from "@/assets/images/imagem1.jpg"
   import imagemb from "@/assets/images/imagem2.jpg"
   import imagemc from "@/assets/images/imagem3.jpg"
@@ -74,6 +75,27 @@
   import imagemg from "@/assets/images/imagem7.jpg"
   import imagemh from "@/assets/images/imagem8.jpg"
   import imagemi from "@/assets/images/imagem9.jpg"
+  //casais
+  import casais1 from "@/assets/images/casais1.jpg"
+  import casais2 from "@/assets/images/casais2.jpg"
+  import casais3 from "@/assets/images/casais3.jpg"
+  import casais4 from "@/assets/images/casais4.jpg"
+  import casais5 from "@/assets/images/casais5.jpg"
+  import casais6 from "@/assets/images/casais6.jpg"
+  import casais7 from "@/assets/images/casais7.jpg"
+  import casais8 from "@/assets/images/casais8.jpg"
+  import casais9 from "@/assets/images/casais9.jpg"
+  import casais10 from "@/assets/images/casais10.jpg"
+  import casais11 from "@/assets/images/casais11.jpg"
+  import casais12 from "@/assets/images/casais12.jpg"
+  import pub1 from "@/assets/images/pub1.jpg"
+  import pub2 from "@/assets/images/pub2.jpg"
+  import pub3 from "@/assets/images/pub3.jpg"
+  import pub4 from "@/assets/images/pub4.jpg"
+  import pub5 from "@/assets/images/pub5.jpg"
+  import pub6 from "@/assets/images/pub6.jpg"
+  import pub7 from "@/assets/images/pub7.jpg"
+
  /* import imagemj from "@/assets/images/imagem10.jpg"
   import imagemk from "@/assets/images/imagem11.jpg"
   import imagemm from "@/assets/images/imagem12.jpg"
@@ -97,6 +119,26 @@
         {title: "", image: imagemh, category: 'BAL' , show: false},
         {title: "", image: imagemg, category: 'CLI' , show: false},
         {title: "", image: imagemi, category: 'CLI' , show: false},
+        {title: "", image: casais1, category: 'CLI' , show: false},
+        {title: "", image: casais2, category: 'CLI' , show: false},
+        {title: "", image: casais3, category: 'CLI' , show: false},
+        {title: "", image: casais4, category: 'CLI' , show: false},
+        {title: "", image: casais5, category: 'CLI' , show: false},
+        {title: "", image: casais6, category: 'CLI' , show: false},
+        {title: "", image: casais7, category: 'CLI' , show: false},
+        {title: "", image: casais8, category: 'CLI' , show: false},
+        {title: "", image: casais9, category: 'CLI' , show: false},
+        {title: "", image: casais10, category: 'CLI' , show: false},
+        {title: "", image: casais11, category: 'CLI' , show: false},
+        {title: "", image: casais12, category: 'CLI' , show: false},
+        {title: "", image: pub1, category: 'PUB' , show: false},
+        {title: "", image: pub2, category: 'PUB' , show: false},
+        {title: "", image: pub3, category: 'PUB' , show: false},
+        {title: "", image: pub4, category: 'PUB' , show: false},
+        {title: "", image: pub5, category: 'PUB' , show: false},
+        {title: "", image: pub6, category: 'PUB' , show: false},
+        {title: "", image: pub7, category: 'PUB' , show: false},
+
       ]
     }),
 	methods: {

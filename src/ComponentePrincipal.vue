@@ -1,8 +1,8 @@
 <template>
   <div>
-      <MenuVue />
-      <router-view/>
-    </div>
+    <MenuVue />
+    <router-view/>
+  </div>
 </template>
 
 <script>

@@ -1,88 +1,69 @@
 <template>
-<div>
-<section class="pricing" id="pricing">
-    <input type="submit" ref="passeios"  maxlength="0"  />
-    <div class="title-container">
-        <h1 class="heading"> Nossos Passeios </h1>
-    </div>
-    <input type="submit" ref="search"  maxlength="0"  />
-    <div class="box-container">
-        <div class="box"
-        data-aos="zoom-in"
-        data-aos-ease="ease"
-        data-aos-duration="1000"
-        data-aos-delay='300'>
-              <div class="box-img">
-               <Flicking :options="{ horizontal: true }" :plugins="plugins1">
-                    <img src="@/assets/images/vooemgrupo.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                    <img src="@/assets/images/vooemgrupo.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                </Flicking>
-              </div>
+  <div id="app">
+    <button @click="scrollToElement">scroll to last</button>
+    <p v-for="n of 200" :key="n" :ref="n === 100 ? 'last' : undefined">
+      {{ n }}
+    </p>
+        <button @click="scrollToElement">scroll to last</button>
 
-            <h3 class="title">Voo em Grupo</h3>
-            <ul>
-                <li> <i class="fas fa-check"></i> 1000+ voos </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-times"></i> unlimited storage </li>
-                <li> <i class="fas fa-times"></i> +40 de balões  </li>
-            </ul>
-            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
-        </div>
-        <div class="box"
-        data-aos="zoom-in"
-        data-aos-ease="ease"
-        data-aos-duration="1000"
-        data-aos-delay='300'>
-            <div class="box-img">
-               <Flicking :options="{ horizontal: true }" :plugins="plugins2">
-                  <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                  <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                </Flicking>
-            </div>
-            <h3 class="title">Voo publicitário</h3>
-            <ul>
-                <li> <i class="fas fa-check"></i> 1000+ voos </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-check"></i> unlimited storage </li>
-                <li> <i class="fas fa-times"></i> +40 de balões  </li>
-            </ul>
-            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
-        </div>
-        <div class="box"
-        data-aos="zoom-in"
-        data-aos-ease="ease"
-        data-aos-duration="1000"
-        data-aos-delay='300'
-        >
-            <div class="box-img">
-               <Flicking :options="{ horizontal: true }" :plugins="plugins3">
-                <img src="@/assets/images/voocasal.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                <img src="@/assets/images/voocasal.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
-                </Flicking>
-            </div>
-            <h3 class="title">Voo de Casal</h3>
-            <ul>
-                <li> <i class="fas fa-check"></i> Totalmente Novo! </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-check"></i> unlimited storage </li>
-                <li> <i class="fas fa-check"></i> 1 balão no céu </li>
-            </ul>
-            <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
-        </div>
-    </div>
-    </section>
+     <p v-for="n of 200" :key="n" :ref="n === 300 ? 'last' : undefined">
+      {{ n }}
+    </p>
   </div>
 </template>
+
 <script>
-import { AutoPlay } from "@egjs/flicking-plugins";
-
-
 export default {
-  data: () => { return {
-      plugins1: [new AutoPlay({ duration: 6000, stopOnHover: false })],
-      plugins2: [new AutoPlay({ duration: 6000, stopOnHover: false })],
-      plugins3: [new AutoPlay({ duration: 6000, stopOnHover: false })],
-    }
-  }
-}
+  name: "App",
+  methods: {
+    scrollToElement() {
+      const [el] = this.$refs.last;
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+  },
+};
 </script>
+
+<style>
+#app {
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  position: relative;
+  line-height: 2rem;
+  color: #2c3e50;
+  width: 800px;
+  margin: 0 auto;
+}
+.verde{
+    width: 100vw;
+    height: 100vh;
+    background: green;
+}
+.amarelo{
+    width: 100vw;
+    height: 100vh;
+    background: yellow;
+}
+.vermelho{
+    width: 100vw;
+    height: 100vh;
+    background: red;
+}
+
+.scroll-to-top {
+  padding: 30px 0;
+  position: absolute;
+  right: 0;
+}
+
+.scroll-to-top button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+</style>

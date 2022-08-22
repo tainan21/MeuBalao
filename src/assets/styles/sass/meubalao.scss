@@ -31,6 +31,8 @@
     background: white;
 
 }
+
+// v-if="currentFilter === project.category || currentFilter === 'ALL'"
 .home{
 min-height: 550px;
 background-attachment: fixed;

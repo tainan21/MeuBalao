@@ -57,13 +57,15 @@
           </vs-sidebar-item>
         </div>
         <div id="market" @click="setFocusAbout()" >
-           <vs-sidebar-item  @click="setFocusAbout()">
+           <vs-sidebar-item>
             <template #icon  ><i class='bx bx-grid-alt' ></i></template>Sobre
           </vs-sidebar-item>
         </div>
-        <vs-sidebar-item id="services"  @click="setFocusServices()" >
-            <template #icon ><i class='bx bxs-spreadsheet'></i></template>Serviços
-        </vs-sidebar-item>
+          <div id="servicois" @click="setFocusServices()">
+            <vs-sidebar-item id="servicos"  @click="setFocusServices()" >
+                <template #icon ><i class='bx bxs-spreadsheet'></i></template>Serviços
+            </vs-sidebar-item>
+        </div>
           <vs-sidebar-item id="contact"  >
             <template #icon ><i class='bx bx-handicap'></i></template>Adaptados
           </vs-sidebar-item>
