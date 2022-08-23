@@ -6,13 +6,11 @@
 			<h1 class="heading">Balonismo</h1>
 		</div>
 		<div class="filters">
-      <div class="container">
-        <div class="row">
-          <span class="filters_button" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
-          <span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">Balonismo</span>
-          <span class="filters_button" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">Casais</span>
-          <span class="filters_button" v-bind:class="{ active: currentFilter === 'PUB' }" v-on:click="setFilter('PUB')">Publicitário</span>
-        </div>
+      <div class="container testecb">
+            <span class="filters_button" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
+            <span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">Balonismo</span>
+            <span class="filters_button" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">Casais</span>
+            <span class="filters_button" v-bind:class="{ active: currentFilter === 'PUB' }" v-on:click="setFilter('PUB')">Publicitário</span>
       </div>
 		</div>
 	</div>
@@ -57,7 +55,6 @@
           </vs-dialog>
         </div>
 		</div> 
-
 	</transition-group>
   </section>
 </div>
@@ -161,6 +158,9 @@
 html,body {
 	margin:0;
 	font-family: 'Dawning of a New Day', cursive;
+}
+.testecb{
+  dislay: flex;
 }
 
 .title-container {

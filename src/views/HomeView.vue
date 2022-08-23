@@ -1,23 +1,74 @@
 <template>
     <div>
-      
+       <div class="topbarshowphone">
+        <div class="salvo" >
+          <div>
+             <vs-button @click="activeSidebar = !activeSidebar" >
+              <i class='bx bx-menu-alt-left'></i>
+            </vs-button> 
+          </div>
+          <div >
+             <div class="balon-img">
+                <img src="@/assets/images/logo-trans.png" class="logoimgapp" alt="meubalao">
+              </div>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: center;">
+             <vs-button  href="https://www.instagram.com/meubalaoboituva/"  flat icon>
+              <i class='bx bxl-instagram'  style="font-size: 18px !important;"></i>
+            </vs-button>
+            <vs-button  href="https://www.facebook.com/meubalaoboituva" flat icon>
+              <i class='bx bxl-facebook' style="font-size: 18px !important;"></i>
+            </vs-button>
+          </div>
+        </div>
+      <vs-sidebar absolute v-model="active" :open.sync="activeSidebar">
+        <template #logo><!-- ...img logo --></template>
+            <vs-sidebar-item  id="home" >
+              <div @click="test_home()">home</div>
+              <template  #icon><i class='bx bx-home'></i></template>
+            </vs-sidebar-item>
+            <vs-sidebar-item  id="abouts" >
+              <div @click="test_abouts()">about</div>
+              <template  #icon><i class='bx bx-grid-alt'></i></template>
+            </vs-sidebar-item>
+            <vs-sidebar-item  id="servic" >
+              <div @click="test_servic()">Serviços</div>
+              <template  #icon><i class='bx bxs-spreadsheet'></i></template>
+            </vs-sidebar-item>
+            <vs-sidebar-item  id="depoiment" >
+              <div @click="test_click()">Depoimentos</div>
+              <template  #icon><i class='bx bxs-message-dots'></i></template>
+            </vs-sidebar-item>
+            <vs-sidebar-item  id="contact" >
+              <div @click="test_adaptados()">Adaptados</div>
+              <template  #icon><i class='bx bx-handicap'></i></template>
+            </vs-sidebar-item>
+            <vs-sidebar-item  id="galery" >
+              <div @click="test_click()">galery</div>
+              <template  #icon><i class='bx bxs-image'></i></template>
+            </vs-sidebar-item>
+          </vs-sidebar>
+      </div>
         <input type="submit" ref="home"  maxlength="0"  />
+          <p ref="home"></p>
         <BannerInicial />
-        <button  @click="test_click">scroll to last</button>
-
-        <input type="submit" ref="about"  maxlength="0"  />
+        <p ref="abouts"></p>
+          <input type="submit" ref="about"  maxlength="0"  />
         <About />
-        <input type="submit" ref="services"  maxlength="0"  />
+        <p ref="servic"></p>
+          <input type="submit" ref="services"  maxlength="0"  />
         <NossosPasseios />
-        <input type="submit" ref="Contact"  maxlength="0"  />
+        <p ref="adaptados"></p>
+          <input type="submit" ref="Contact"  maxlength="0"  />
         <PVCSection />
-     <!--    <Services />  -->
-        <input type="submit" ref="teste"  maxlength="0"  />
+          <!--    <Services />  -->
+        <input type="submit" ref="Depoiments"  maxlength="0"  />
+        <p ref="depoiments"></p>
         <Depoiments />
-        <p v-for="n of 1" :key="n" :ref="n === 1 ? 'last' : undefined" style="color: transparent; margin: 0;">{{ n }}</p>
+        <p ref="teste"></p>
         <input type="submit" ref="gallery"  maxlength="0"  />
         <GalleryFilter />
-        <FooterSection  />
+        <FooterSection />
     </div>
 </template>
 
@@ -38,7 +89,9 @@ import { AutoPlay } from "@egjs/flicking-plugins";
     data:() => ({
         options: [],
         plugins: [new AutoPlay()],
-        active: false
+        active: false,
+              activeSidebar: false
+
     }),
     components: {
       'GalleryFilter': GalleryFilter,
@@ -53,21 +106,42 @@ import { AutoPlay } from "@egjs/flicking-plugins";
     methods: {
       test_click(){
       const el = this.$refs.teste
-       if (el) {       
+      if (el) {
         el.scrollIntoView({ behavior: "smooth" });
-      }      
-    },
-
+        }
+      },
+      test_servic(){
+      const el = this.$refs.servic
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        }
+      },
+      test_depoiments(){
+      const el = this.$refs.depoiments
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        }
+      },
+      test_abouts(){
+      const el = this.$refs.abouts
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        }
+      },
+      test_home(){
+      const el = this.$refs.home
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        }
+      },
+      test_adaptados(){
+      const el = this.$refs.adaptados
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        }
+      },
       setFocus: function(){
         this.$refs.home.focus();
-      },
-      scrollToElement() {
-        const [el] = this.$refs.last;
-        console.log("aqui amigo > ", this.$refs.last)
-        if (el) {
-          el.scrollIntoView({ behavior: "smooth" });
-          console.log("aqui amigo > ", this.$refs)
-        }
       },
       setFocusAbout(){
       //  this.$refs.about.focus();
@@ -80,9 +154,7 @@ import { AutoPlay } from "@egjs/flicking-plugins";
         this.$refs.Depoiments.focus();
       },
       setFocusGallery: function(){
-        //this.$refs.gallery.focus();
-       this.test_click()
-      
+        this.$refs.gallery.focus();
       },
       setFocusContact: function(){
         this.$refs.Contact.focus();
