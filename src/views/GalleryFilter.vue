@@ -1,19 +1,17 @@
 <template>
-<div >
+<div>
   <section>
 	<div class="title-container">
-		<div>
-			<h1 class="heading">Balonismo</h1>
-		</div>
+		<h1 class="heading">Balonismo</h1>
 		<div class="filters">
-      <div class="container testecb">
-            <span class="filters_button" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">TODAS</span>
+          <div class="container">
+            
             <span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">Balonismo</span>
             <span class="filters_button" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">Casais</span>
             <span class="filters_button" v-bind:class="{ active: currentFilter === 'PUB' }" v-on:click="setFilter('PUB')">Publicitário</span>
+          </div>
       </div>
 		</div>
-	</div>
 	<transition-group class="projects" name="projects"
           data-aos="slide-right"
         data-aos-ease="ease"
@@ -159,8 +157,12 @@ html,body {
 	margin:0;
 	font-family: 'Dawning of a New Day', cursive;
 }
-.testecb{
-  dislay: flex;
+@media (max-width: 599px){
+  .filters_responsive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .title-container {

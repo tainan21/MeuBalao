@@ -1,6 +1,6 @@
 <template>
     <div class="hidden">
-      <div class="barshow">
+<!--      <div class="barshow">
         <vs-navbar shadow square center-collapsed
         data-aos="zoom-in"
         data-aos-ease="ease"
@@ -27,39 +27,11 @@
             </div>
           </template>
         </vs-navbar>
-      </div>
+      </div>-->
      
-    </div>
+    </div> 
   </template>
 <script>
-import {EventBus} from "@/eventbus"
-  export default {
-    data:() => ({
-      active: 'home',
-      activeSidebar: false
-    }),
-    methods: {
-      setFocus(){
-        EventBus.$emit('focus')
-      },
-      setFocusAbout(){
-        EventBus.$emit('focusabout')
-      },
-      setFocusServices(){
-        EventBus.$emit('focusservices')
-      },
-      setFocusDepoiment(){
-        EventBus.$emit('focusdepoiment')
-      },
-      setFocusGallery(){
-        console.log("entrou aqui galeria")
-        EventBus.$emit('focusgallery')
-      },
-      setFocusContact(){
-        EventBus.$emit('focuscontact')
-      },
-    }
-  }
   </script>
 
         
@@ -96,8 +68,7 @@ import {EventBus} from "@/eventbus"
   width: 140px !important;
   height: 140px !important; 
 }
-@media (max-width: 599px)
-{
+@media (max-width: 599px){
    .mobile-none{
       display: none;
     }
@@ -113,7 +84,6 @@ import {EventBus} from "@/eventbus"
     .mobile-white{
       color: white !important;
     }
-
   .barshow{
     display: none;
     margin: 0 !important;
@@ -127,6 +97,7 @@ import {EventBus} from "@/eventbus"
   .topbarshowphone{
     display: none;
    }
+ 
     
 
 .home{background:url(@/assets/images/ceu.jpg) no-repeat;}

@@ -1,5 +1,35 @@
 <template>
-    <div>
+    <div> 
+      <div class="hidden">
+        <div class="barshow">
+          <vs-navbar shadow square center-collapsed
+          data-aos="zoom-in"
+          data-aos-ease="ease"
+          data-aos-duration="1500"
+          data-aos-delay='400'>
+            <template #left>
+                <div class="card-logo">
+                  <div class="image">
+                    <img src="@/assets/images/logo-trans.png" class="logoimg" alt="meubalao">
+                  </div>
+                </div>
+            </template>
+            <template #right>
+              <div class="barshow">
+                <vs-navbar-item :active="active == 'home'" item:id="home" @click="test_home()">Home</vs-navbar-item>
+                <vs-navbar-item :active="active == 'docs'" id="docs" @click="test_abouts()">Sobre</vs-navbar-item>
+                <vs-navbar-item :active="active == 'Services'" id="Services" @click="test_servic()">Serviços</vs-navbar-item>
+                <vs-navbar-item :active="active == 'license'" id="license" @click="test_adaptados()">Adaptados</vs-navbar-item>
+                <vs-navbar-item :active="active == 'Depoiment'" id="Depoiment" @click="test_depoiments()">Depoimentos</vs-navbar-item>
+                <vs-navbar-item :active="active == 'galery'" id="galery" @click="test_click()">Galeria</vs-navbar-item>
+                <vs-navbar-item href="https://www.instagram.com/meubalaoboituva/"><i  href="https://www.instagram.com/meubalaoboituva/" class='bx bxl-instagram'></i></vs-navbar-item>
+                <vs-navbar-item href="https://www.facebook.com/meubalaoboituva" flat icon><i class='bx bxl-facebook'></i></vs-navbar-item>
+                <vs-navbar-item href="https://wa.me/5515997150101?text=Ola" ><i class='bx bxl-whatsapp'></i></vs-navbar-item>
+              </div>
+            </template>
+          </vs-navbar>
+        </div>
+      </div>     
        <div class="topbarshowphone">
         <div class="salvo" >
           <div>
@@ -22,7 +52,7 @@
           </div>
         </div>
       <vs-sidebar absolute v-model="active" :open.sync="activeSidebar">
-        <template #logo><!-- ...img logo --></template>
+        <template #logo></template>
             <vs-sidebar-item  id="home" >
               <div @click="test_home()">home</div>
               <template  #icon><i class='bx bx-home'></i></template>
@@ -36,7 +66,7 @@
               <template  #icon><i class='bx bxs-spreadsheet'></i></template>
             </vs-sidebar-item>
             <vs-sidebar-item  id="depoiment" >
-              <div @click="test_click()">Depoimentos</div>
+              <div @click="test_depoiments()">Depoimentos</div>
               <template  #icon><i class='bx bxs-message-dots'></i></template>
             </vs-sidebar-item>
             <vs-sidebar-item  id="contact" >
@@ -48,7 +78,7 @@
               <template  #icon><i class='bx bxs-image'></i></template>
             </vs-sidebar-item>
           </vs-sidebar>
-      </div>
+      </div>  
         <input type="submit" ref="home"  maxlength="0"  />
           <p ref="home"></p>
         <BannerInicial />
@@ -61,7 +91,6 @@
         <p ref="adaptados"></p>
           <input type="submit" ref="Contact"  maxlength="0"  />
         <PVCSection />
-          <!--    <Services />  -->
         <input type="submit" ref="Depoiments"  maxlength="0"  />
         <p ref="depoiments"></p>
         <Depoiments />
@@ -73,6 +102,7 @@
 </template>
 
 <script>
+
 import GalleryFilter from '@/views/GalleryFilter.vue'
 import NossosPasseios from '@/components/NossosPasseios.vue'
 import About from '@/components/About.vue'
@@ -82,16 +112,12 @@ import BannerInicial from '@/components/BannerInicial.vue'
 import FooterSection from '@/components/Footer.vue'
 import PVCSection from '@/components/PVCSection.vue'
 import {EventBus} from "@/eventbus"
-import { AutoPlay } from "@egjs/flicking-plugins";
-
 
   export default {
     data:() => ({
         options: [],
-        plugins: [new AutoPlay()],
-        active: false,
-              activeSidebar: false
-
+        active: 'home',
+        activeSidebar: false
     }),
     components: {
       'GalleryFilter': GalleryFilter,
@@ -103,6 +129,7 @@ import { AutoPlay } from "@egjs/flicking-plugins";
       'FooterSection': FooterSection,
       'PVCSection': PVCSection,
      },
+
     methods: {
       test_click(){
       const el = this.$refs.teste
@@ -160,13 +187,13 @@ import { AutoPlay } from "@egjs/flicking-plugins";
         this.$refs.Contact.focus();
       },
     },
-    created(){
+      created(){
       EventBus.$on('focus', () => {this.setFocus()}),
       EventBus.$on('focusabout', () => {this.setFocusAbout()}),
       EventBus.$on('focusservices', () => {this.setFocusServices()}),
       EventBus.$on('focusdepoiment', () => {this.setFocusDepoiment()}),
       EventBus.$on('focusgallery', () => {this.setFocusGallery()}),
       EventBus.$on('focuscontact', () => {this.setFocusContact()})
-    },
+    }, 
   }
  </script>
