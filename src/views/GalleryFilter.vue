@@ -5,7 +5,6 @@
 		<h1 class="heading">Balonismo</h1>
 		<div class="filters">
           <div class="container">
-            
             <span class="filters_button" v-bind:class="{ active: currentFilter === 'BAL' }" v-on:click="setFilter('BAL')">Balonismo</span>
             <span class="filters_button" v-bind:class="{ active: currentFilter === 'CLI' }" v-on:click="setFilter('CLI')">Casais</span>
             <span class="filters_button" v-bind:class="{ active: currentFilter === 'PUB' }" v-on:click="setFilter('PUB')">Publicitário</span>
@@ -54,6 +53,10 @@
         </div>
 		</div> 
 	</transition-group>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <a href="https://www.instagram.com/meubalaoboituva/" class="btn"> <i class="bx bxl-instagram icont-rest"></i> Visite nosso instagram</a>
+
+  </div>
   </section>
 </div>
 

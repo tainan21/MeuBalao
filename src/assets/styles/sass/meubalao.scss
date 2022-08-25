@@ -6,6 +6,33 @@
     --gradient:linear-gradient(90deg, var(--purple), var(--pink));
 }
 
+
+.author-section {
+	color: #fff;
+	
+	.author-pic {
+		width: 150px;
+	    height: 150px;
+	}
+	.social-list {
+		li {
+			background: rgba(0, 0, 0, 0.1);
+			width: 36px;
+			height: 36px;
+			display: inline-block;
+			border-radius: 50%;
+			padding-top: 6px;
+			&:hover {
+				background: rgba(0, 0, 0, 0.15);
+			}
+		}
+		a {
+			color: #fff;
+		}
+	}
+}
+
+
 .title-container {
     display:flex;
     flex-direction:column;
@@ -34,7 +61,7 @@
 
 // v-if="currentFilter === project.category || currentFilter === 'ALL'"
 .home{
-min-height: 550px;
+min-height: 100vh;
 background-attachment: fixed;
 background-position: 50%;
 background-repeat: no-repeat;

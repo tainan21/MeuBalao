@@ -1,15 +1,12 @@
 <template>
     <div>
-        
-    <section class="review" id="review">
-
-        <div class="title-container">
+          <div class="title-container">
             <h1 class="heading"> Depoimento de Clientes </h1>
         </div>
-        <input type="submit" ref="depoiment"  maxlength="0"  />
-
+    <section class="review" id="review">
+      
         <div class="box-container">
-            <Flicking :options="{  circular: true, moveType: 'freeScroll'}" :plugins="plugins">
+            <Flicking :options="{ moveType: 'freeScroll', circular: true}" :plugins="pluginsdep">
             <div class="box box-coments panel"
                 data-aos="zoom-in"
                 data-aos-ease="ease"
@@ -117,6 +114,27 @@
                         a vista, a sensação de estar voando, maravilhoso!!
                     </div>
                 </div>
+            </div>
+            <div class="box box-coments panel"
+                data-aos="zoom-in"
+                data-aos-ease="ease"
+                data-aos-duration="1000"
+                data-aos-delay='300'>
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="@/assets/images/pic6.jpg"  alt="Comentário 2 Boituva - balonismo">
+                    <h3>Gabriel Lopis </h3>
+                    <div class="stars">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                    </div>
+                    <div class="comment">
+                      Experiência incrível, quero repetir o mais rapído possível!! Em breve, voo em grupo com a minha empresa!
+                    </div>
+                </div>
             </div>      
         </Flicking>        
         </div>
@@ -129,14 +147,9 @@ import { AutoPlay } from "@egjs/flicking-plugins";
 
 export default {
   data: () => { return {
-      plugins: [new AutoPlay({ duration: 1000, stopOnHover: false })],
-      plugins2: [new AutoPlay({ duration: 8000, stopOnHover: false })],
-      plugins3: [new AutoPlay({ duration: 8000, stopOnHover: false })],
+      pluginsdep: [new AutoPlay({ duration: 8000, stopOnHover: false })],
     }
   }
 }
 </script>
 
-
-
-</script>

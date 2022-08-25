@@ -1,12 +1,17 @@
 <template>
     <div>
         <div class="footers">
+       
             <div class="footers-icons">
                 <a href="https://wa.me/5515997150101?text=Ola" class="btn" style="padding: 0.8rem 1rem !important; margin: 5px 5px; display: flex; align-items: center; justify-content: center;"><i class=" bx bxl-whatsapp icont-rest" ></i></a>
                 <a href="https://wa.me/5515997150101?text=Ola" class="btn" style="padding: 0.8rem 1rem !important; margin: 5px 5px; display: flex; align-items: center; justify-content: center;"><i class=" bx bxl-instagram icont-rest" ></i></a>
                 <a href="https://wa.me/5515997150101?text=Ola" class="btn" style="padding: 0.8rem 1rem !important; margin: 5px 5px; display: flex; align-items: center; justify-content: center;"><i class=" bx bxl-facebook icont-rest" ></i></a>
             </div>
-            <div class="footers-copryght"> Copyright © 2022 Seusite. All rights reserved. </div>
+            <div class="footers-copryght"> 
+                <div class="">
+                    Copyright © 2022 Seusite. All rights reserved.
+                </div>
+            </div>
         </div>
     <!--    <div class="footer"
                     data-aos="zoom-in"
@@ -57,6 +62,11 @@
                 display: flex;
             }
         }
+        &-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         &-description{
             display: flex;
             align-items: center;
@@ -64,12 +74,12 @@
             width: 100%;
         }
         &-copryght{
+            padding-top: 4rem;
+            border-top: 1px solid #c8d4d6;
+            background-color: #f7fafd;
             display: flex;
-            justify-content: center;
             align-items: center;
-            width: 100%;
-            height: 30px;
-            background-color: #814096;
+            justify-content: center;
         }
     }
 </style>
