@@ -5,7 +5,7 @@
         <h1 class="heading"> Nossos Passeios </h1>
     </div>
     <div class="box-container">
-        <div class="box"
+        <div class="box inpc"
         data-aos="zoom-in"
         data-aos-ease="ease"
         data-aos-duration="1000"
@@ -27,23 +27,22 @@
             </ul>
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Confira agora</a>
         </div>
-        <div class="box"
+        <div class="box inpc"
         data-aos="zoom-in"
         data-aos-ease="ease"
         data-aos-duration="1000"
         data-aos-delay='300'>
             <div class="box-img">
-                  <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">">
+                  <img src="@/assets/images/voopublicitario.jpeg" style="width: 240px; height: 240px; object-fit: cover;" alt="">
             </div>
             <h3 class="title">Voo publicitário</h3>
             <ul>
                 <li> <i class="bx bx-checks"></i> <b>O céu é o limite para sua marca. </b></li>
                 <li> <i class="bx bx-check"></i> Tenha um balão personalizado com sua marca e promova eventos corporativos incluindo voos cativos (voos experimentais onde o balão sobe até +- 30m de altura). </li>
             </ul>
-            <div class="">
-                        <a href="https://wa.me/5515997150101?text=Ola" class="btn flex center">Confira agora</a></div>
-            </div>  
-        <div class="box"
+            <a href="https://wa.me/5515997150101?text=Ola" class="btn flex center">Confira agora</a>
+        </div>
+        <div class="box inpc"
         data-aos="zoom-in"
         data-aos-ease="ease"
         data-aos-duration="1000"

@@ -31,8 +31,7 @@
      
     </div> 
   </template>
-<script>
-  </script>
+<script></script>
 
         
  <style>
@@ -72,6 +71,9 @@
    .mobile-none{
       display: none;
     }
+
+    
+
    .home-mobile{
       background:url(@/assets/images/ceu.jpg) no-repeat;
       min-height: 550px;
@@ -97,9 +99,12 @@
   .topbarshowphone{
     display: none;
    }
- 
-    
-
+   
+    .inpc{
+      height: 669px !important;
+      flex-direction: column;
+      padding: 1rem 1.75rem !important;
+    }
 .home{background:url(@/assets/images/ceu.jpg) no-repeat;}
    .vs-navbar-content{
       position: fixed !important;

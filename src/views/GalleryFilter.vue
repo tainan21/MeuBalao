@@ -55,7 +55,6 @@
 	</transition-group>
   <div style="display: flex; align-items: center; justify-content: center;">
     <a href="https://www.instagram.com/meubalaoboituva/" class="btn"> <i class="bx bxl-instagram icont-rest"></i> Visite nosso instagram</a>
-
   </div>
   </section>
 </div>
@@ -72,7 +71,6 @@
   import imagemf from "@/assets/images/imagem6.jpg"
   import imagemg from "@/assets/images/imagem7.jpg"
   import imagemh from "@/assets/images/imagem8.jpg"
-  import imagemi from "@/assets/images/imagem9.jpg"
   //casais
   import casais1 from "@/assets/images/casais1.jpg"
   import casais2 from "@/assets/images/casais2.jpg"
@@ -116,7 +114,6 @@
         {title: "", image: imagemf, category: 'BAL' , show: false},
         {title: "", image: imagemh, category: 'BAL' , show: false},
         {title: "", image: imagemg, category: 'CLI' , show: false},
-        {title: "", image: imagemi, category: 'CLI' , show: false},
         {title: "", image: casais1, category: 'CLI' , show: false},
         {title: "", image: casais2, category: 'CLI' , show: false},
         {title: "", image: casais3, category: 'CLI' , show: false},
