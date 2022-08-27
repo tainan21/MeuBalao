@@ -75,7 +75,7 @@
    .home-mobile{
       background:url(@/assets/images/ceu.jpg) no-repeat;
       min-height: 550px;
-      background-attachment: fixed;
+      background-attachment: inherit !important;
       background-position: 50%;
       background-repeat: no-repeat;
       width: 100%;
@@ -83,6 +83,10 @@
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
+
+        @media (max-width: @iphone-screen) {
+          background-attachment: inherit !important;
+      }
     }
     .mobile-white{
       color: white !important;
