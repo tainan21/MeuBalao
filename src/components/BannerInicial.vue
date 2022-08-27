@@ -11,7 +11,7 @@
                     data-aos="zoom-in"
                     data-aos-easing="ease-in"
                     data-aos-duration="1000"
-                    data-aos-delay="300">Confira Agora!</a>
+                    data-aos-delay="300"> Agende seu voo!</a>
                 </div>   
                 <div class="content banner-rotate">
                     <h3 data-aos="zoom-in" class="mobile-white"
@@ -22,7 +22,7 @@
                     data-aos="zoom-in"
                     data-aos-easing="ease-in"
                     data-aos-duration="1000"
-                    data-aos-delay="300">Chame!</a>
+                    data-aos-delay="300"> Agende seu voo!</a>
                 </div>  
                 <div class="content banner-rotate">
                     <h3 data-aos="zoom-in" class="mobile-white"
@@ -33,7 +33,7 @@
                     data-aos="zoom-in"
                     data-aos-easing="ease-in"
                     data-aos-duration="1000"
-                    data-aos-delay="300">Chame!</a>
+                    data-aos-delay="300"> Agende seu voo!</a>
                 </div>          
             </Flicking>
             <div 

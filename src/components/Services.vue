@@ -30,7 +30,7 @@
             <a href="https://wa.me/5515997150101?text=Ola" class="btn">Saiba Mais!</a>
         </div>  
         -->
-        <div class="box "
+        <div class="box"
         data-aos="zoom-in"
         data-aos-ease="ease"
         data-aos-duration="1000"

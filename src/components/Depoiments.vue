@@ -3,8 +3,7 @@
           <div class="title-container">
             <h1 class="heading"> Depoimento de Clientes </h1>
         </div>
-    <section class="review" id="review">
-      
+    <div class="review" id="review">
         <div class="box-container">
             <Flicking :options="{ moveType: 'freeScroll', circular: true}" :plugins="pluginsdep">
             <div class="box box-coments panel"
@@ -138,7 +137,7 @@
             </div>      
         </Flicking>        
         </div>
-    </section>
+    </div>
 </div>
 </template>
 <script>

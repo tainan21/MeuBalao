@@ -1,6 +1,6 @@
 <template>
 <div>
-<section class="pricing" id="pricing">
+<div class="pricing" id="pricing">
     <div class="title-container">
         <h1 class="heading"> Nossos Passeios </h1>
     </div>
@@ -66,7 +66,7 @@
             <a href="https://wa.me/5515997150101?text=Ola" class="btn " style="margin: 0;">Confira agora</a>
         </div>
     </div>
-    </section>
+    </div>
   </div>
 </template>
 <script>

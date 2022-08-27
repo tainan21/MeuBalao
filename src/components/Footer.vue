@@ -1,7 +1,6 @@
 <template>
     <div>
         <div class="footers">
-       
             <div class="footers-icons">
                 <a href="https://wa.me/5515997150101?text=Ola" class="btn" style="padding: 0.8rem 1rem !important; margin: 5px 5px; display: flex; align-items: center; justify-content: center;"><i class=" bx bxl-whatsapp icont-rest" ></i></a>
                 <a href="https://wa.me/5515997150101?text=Ola" class="btn" style="padding: 0.8rem 1rem !important; margin: 5px 5px; display: flex; align-items: center; justify-content: center;"><i class=" bx bxl-instagram icont-rest" ></i></a>

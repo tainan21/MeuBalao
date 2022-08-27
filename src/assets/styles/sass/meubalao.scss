@@ -42,7 +42,11 @@ background-position: 50%;
 background-repeat: no-repeat;
 width: 100%;
 background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
 }
+
 
 input{
     -webkit-appearance: none;
@@ -310,7 +314,7 @@ header label{
 
 .home .content h3{
     font-size: 5.5rem;
-    color:#333;
+    color:#fff;
     text-transform: uppercase;
 }
 

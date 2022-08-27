@@ -72,8 +72,6 @@
       display: none;
     }
 
-    
-
    .home-mobile{
       background:url(@/assets/images/ceu.jpg) no-repeat;
       min-height: 550px;
@@ -82,6 +80,9 @@
       background-repeat: no-repeat;
       width: 100%;
       background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
     }
     .mobile-white{
       color: white !important;

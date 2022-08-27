@@ -50,11 +50,11 @@
       <vs-sidebar absolute v-model="active" :open.sync="activeSidebar">
         <template #logo></template>
             <vs-sidebar-item  id="home" >
-              <div @click="test_home()">home</div>
+              <div @click="test_home()">Home</div>
               <template  #icon><i class='bx bx-home'></i></template>
             </vs-sidebar-item>
             <vs-sidebar-item  id="abouts" >
-              <div @click="test_abouts()">about</div>
+              <div @click="test_abouts()">Sobre</div>
               <template  #icon><i class='bx bx-grid-alt'></i></template>
             </vs-sidebar-item>
             <vs-sidebar-item  id="servic" >
@@ -70,7 +70,7 @@
               <template  #icon><i class='bx bx-handicap'></i></template>
             </vs-sidebar-item>
             <vs-sidebar-item  id="galery" >
-              <div @click="test_click()">galery</div>
+              <div @click="test_click()">Galeria</div>
               <template  #icon><i class='bx bxs-image'></i></template>
             </vs-sidebar-item>
           </vs-sidebar>
